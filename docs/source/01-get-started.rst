@@ -1,5 +1,5 @@
-Get started with Aclimate
-=========================
+01 - Get started with Aclimate
+==============================
 
 How does it work?
 -----------------

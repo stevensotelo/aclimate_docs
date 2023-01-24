@@ -27,30 +27,46 @@ and tailoring to crop-specific decision-making processes.
 .. toctree::
   :hidden:
   :maxdepth: 3
+  :caption: Installation
+
+  03-installation
+
+.. toctree::
+  :hidden:
+  :maxdepth: 3
+  :caption: WebAdmin
+
+  04-webadmin
+
+.. toctree::
+  :hidden:
+  :maxdepth: 3
+  :caption: Importing data
+
+  05-importing
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
   :caption: Forecast process
 
-  03-forecast-process
+  06-forecast
 
 .. toctree::
   :hidden:
   :maxdepth: 2
   :caption: Web API
 
-  04-web-api
+  07-webapi
 
 .. toctree::
   :hidden:
   :maxdepth: 2
   :caption: Spatial data
 
-  05-spatial-data
+  08-spatial
 
-.. toctree::
-  :hidden:
-  :maxdepth: 3
-  :caption: Web Admin
 
-  06-web-admin
 
 .. toctree::
    :maxdepth: 2
