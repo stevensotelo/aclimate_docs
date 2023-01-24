@@ -7,4 +7,4 @@ This section describes how manage the WebAdmin module
   :hidden:
   :maxdepth: 1
 
-  04-webadmin-users
+  05-webadmin-users
