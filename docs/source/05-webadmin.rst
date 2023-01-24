@@ -1,5 +1,5 @@
-04 - WebAdmin
-=============
+WebAdmin
+========
 
 This section describes how manage the WebAdmin module
 

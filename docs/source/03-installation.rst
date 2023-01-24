@@ -1,2 +1,2 @@
-02 - Installation
-=================
+Installation
+============
