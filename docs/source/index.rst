@@ -5,7 +5,52 @@
 
 Welcome to Aclimate Platform's documentation
 ============================================
-:dfn:`Aclimate` is a suite of open source tools
+:dfn:`Aclimate` is a platform for agro-climatic forecasts that supports
+the decision-making of farmers and technical assistants. It formalizes the
+processing of climate and crop information from quality control, forecasting,
+and tailoring to crop-specific decision-making processes.
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Get Started
+
+  01-get-started
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Architecture
+
+  02-architecture
+
+.. toctree::
+  :hidden:
+  :maxdepth: 3
+  :caption: Forecast process
+
+  03-forecast-process
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Web API
+
+  04-web-api
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Spatial data
+
+  05-spatial-data
+
+.. toctree::
+  :hidden:
+  :maxdepth: 3
+  :caption: Web Admin
+
+  06-web-admin
 
 .. toctree::
    :maxdepth: 2
