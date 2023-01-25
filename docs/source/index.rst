@@ -27,16 +27,16 @@ and tailoring to crop-specific decision-making processes.
 .. toctree::
   :hidden:
   :maxdepth: 3
-  :caption: Installation
+  :caption: Database
 
-  03-installation
+  03-database
 
 .. toctree::
   :hidden:
   :maxdepth: 3
-  :caption: Database
+  :caption: Installation
 
-  04-database
+  04-installation
 
 .. toctree::
   :hidden:

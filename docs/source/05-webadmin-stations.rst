@@ -1,2 +1,2 @@
-WebAdmin - Weather stations
+WebAdmin - weather stations
 ===========================
