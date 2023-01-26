@@ -1,2 +1,0 @@
-WebAdmin - historical crop production
-=====================================

@@ -43,14 +43,18 @@ and tailoring to crop-specific decision-making processes.
   :maxdepth: 3
   :caption: WebAdmin
 
-  05-webadmin
+  05-admin
+  05-geographic
+  05-production
+  05-import
 
 .. toctree::
   :hidden:
   :maxdepth: 3
-  :caption: Importing data
+  :caption: Importing and exporting
 
-  06-importing
+  06-import
+  06-export
 
 .. toctree::
   :hidden:
