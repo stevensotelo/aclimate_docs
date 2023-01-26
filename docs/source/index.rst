@@ -62,6 +62,10 @@ and tailoring to crop-specific decision-making processes.
   :caption: Forecast process
 
   07-forecast
+  07-seasonal
+  07-subseasonal
+  07-scenarios
+  07-crops
 
 .. toctree::
   :hidden:
