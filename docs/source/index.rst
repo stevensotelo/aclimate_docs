@@ -66,6 +66,7 @@ and tailoring to crop-specific decision-making processes.
   07-subseasonal
   07-scenarios
   07-crops
+  07-problems
 
 .. toctree::
   :hidden:
