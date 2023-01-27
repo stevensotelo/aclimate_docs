@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Aclimate Platform's documentation
-============================================
+Aclimate Platform
+=================
 :dfn:`Aclimate` is a platform for agro-climatic forecasts that supports
 the decision-making of farmers and technical assistants. It formalizes the
 processing of climate and crop information from quality control, forecasting,
@@ -73,6 +73,11 @@ and tailoring to crop-specific decision-making processes.
   :caption: Web API
 
   08-webapi
+  08-geographic
+  08-agronomic
+  08-historical
+  08-forecast
+  08-recommendation
 
 .. toctree::
   :hidden:
