@@ -10,6 +10,13 @@ the decision-making of farmers and technical assistants. It formalizes the
 processing of climate and crop information from quality control, forecasting,
 and tailoring to crop-specific decision-making processes.
 
+The official website of `Aclimate <https://www.aclimate.org/>`_.
+
+.. image:: /_static/img/index/logo.*
+  :alt: The Alliance Bioversity Internacional - CIAT
+  :class: device-screen-vertical side-by-side
+
+
 .. toctree::
   :hidden:
   :maxdepth: 2
