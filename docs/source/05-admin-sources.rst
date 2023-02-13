@@ -103,13 +103,13 @@ Delete sources
 #. To delete one source you must select in the last column, the option **Delete**.
 
       .. image:: /_static/img/05-admin-sources/delete_source_1.*
-        :alt: Guide how to view source details 1
+        :alt: Guide how to delete source 1
         :class: device-screen-vertical side-by-side
 
 #. A new view will appear, in which you can delete the source.
 
       .. image:: /_static/img/05-admin-sources/delete_source_2.*
-        :alt: Guide how to view source details 2
+        :alt: Guide how to delete source 2
         :class: device-screen-vertical side-by-side
 
 #. To finish you must press the **Delete** button
