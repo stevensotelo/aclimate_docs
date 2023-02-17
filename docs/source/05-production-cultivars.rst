@@ -144,3 +144,10 @@ Cultivar thresholds
         :class: device-screen-vertical side-by-side
 
 #. To finish you must press the **Save** button
+
+
+Required fields
+===============
+
+  - The **Label**, is the name of the threshold, usually used **min**, **max**.
+  - The **Value** is the value of the threshold, it is of type double.

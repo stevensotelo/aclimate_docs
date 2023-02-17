@@ -39,14 +39,14 @@ Create soils
 
 #. To create soils you must select below the title Soils, the option **New record**.
 
-            .. image:: /_static/img/05-production-soils/create_cultivar_1.*
-                :alt: Guide how to create cultivars 1
+            .. image:: /_static/img/05-production-soils/create_soil_1.*
+                :alt: Guide how to create soils 1
                 :class: device-screen-vertical side-by-side
 
 #. You must complete all the fields
 
-            .. image:: /_static/img/05-production-soils/create_cultivar_2.*
-                :alt: Guide how to create cultivars 2
+            .. image:: /_static/img/05-production-soils/create_soil_2.*
+                :alt: Guide how to create soils 2
                 :class: device-screen-vertical side-by-side
 
 #. To finish you must press the **Save** button
@@ -55,12 +55,10 @@ Create soils
 Required fields
 ===============
 
-  - The **Country**, you must select the country to which the cultivar will be associated.
-  - The **Variety name** is the name of the cultivar.
-  - The **Crop**, you must select the crop to which the cultivar will be associated.
+  - The **Country**, you must select the country to which the soil will be associated.
+  - The **Soil Name** is the name of the soil.
+  - The **Crop**, you must select the crop to which the soil will be associated.
   - The **Order** establishes the way to list these, the higher the number, the more will be listed first.
-  - **Is rainfed** indicates whether the cultivar is rainfed or irrigated.
-  - **Is national** indicates whether the material is national or imported.
 
 
 .. note::
@@ -69,78 +67,85 @@ Required fields
 
 
 
-Edit cultivars
-==============
+Edit soils
+==========
 
-#. To edit cultivars you must select in the last column, the option **Edit**.
+#. To edit soils you must select in the last column, the option **Edit**.
 
-          .. image:: /_static/img/05-production-soils/edit_cultivar_1.*
-            :alt: Guide how to edit cultivars 1
+          .. image:: /_static/img/05-production-soils/edit_soil_1.*
+            :alt: Guide how to edit soils 1
             :class: device-screen-vertical side-by-side
 
-#. A new view will be displayed, where you can edit the cultivar fields.
+#. A new view will be displayed, where you can edit the soil fields.
 
-          .. image:: /_static/img/05-production-soils/edit_cultivar_2.*
-            :alt: Guide how to edit cultivars 2
+          .. image:: /_static/img/05-production-soils/edit_soil_2.*
+            :alt: Guide how to edit soils 2
             :class: device-screen-vertical side-by-side
 
 #. To finish you must press the **Save** button.
 
 
-Cultivar details
-================
+Soil details
+============
 
-#. To view cultivar details you must select in the last column, the option **Details**.
+#. To view soil details you must select in the last column, the option **Details**.
 
-      .. image:: /_static/img/05-production-soils/details_cultivar_1.*
-        :alt: Guide how to view cultivar details 1
+      .. image:: /_static/img/05-production-soils/details_soil_1.*
+        :alt: Guide how to view soil details 1
         :class: device-screen-vertical side-by-side
 
-#. A new view will appear, in which you can view the cultivar details.
+#. A new view will appear, in which you can view the soil details.
 
-      .. image:: /_static/img/05-production-soils/details_cultivar_2.*
-        :alt: Guide how to view cultivar details 2
+      .. image:: /_static/img/05-production-soils/details_soil_2.*
+        :alt: Guide how to view soil details 2
         :class: device-screen-vertical side-by-side
 
 
-Delete cultivars
-================
+Delete soils
+============
 
-#. To delete one cultivar you must select in the last column, the option **Delete**.
+#. To delete one soil you must select in the last column, the option **Delete**.
 
-      .. image:: /_static/img/05-production-soils/delete_cultivar_1.*
-        :alt: Guide how to delete cultivars 1
+      .. image:: /_static/img/05-production-soils/delete_soil_1.*
+        :alt: Guide how to delete soils 1
         :class: device-screen-vertical side-by-side
 
-#. A new view will appear, in which you can delete the cultivar.
+#. A new view will appear, in which you can delete the soil.
 
-      .. image:: /_static/img/05-production-soils/delete_cultivar_2.*
-        :alt: Guide how to delete cultivars 2
+      .. image:: /_static/img/05-production-soils/delete_soil_2.*
+        :alt: Guide how to delete soils 2
         :class: device-screen-vertical side-by-side
 
 #. To finish you must press the **Delete** button
 
 
-Cultivar thresholds
-===================
+Soil thresholds
+===============
 
-#. To configure the minimum and maximum parameters of the cultivar threshold, you must select in the last column, the option **Threshold**.
+#. To configure the minimum and maximum parameters of the soil threshold, you must select in the last column, the option **Threshold**.
 
-      .. image:: /_static/img/05-production-soils/threshold_cultivar_1.*
-        :alt: Guide how to configure the threshold for the cultivars 1
+      .. image:: /_static/img/05-production-soils/threshold_soil_1.*
+        :alt: Guide how to configure the threshold for the soils 1
         :class: device-screen-vertical side-by-side
 
 #. A new view will appear, in which allows configure the parameters.
 
-      .. image:: /_static/img/05-production-soils/threshold_cultivar_2.*
-        :alt: Guide how to configure the threshold for the cultivars 2
+      .. image:: /_static/img/05-production-soils/threshold_soil_2.*
+        :alt: Guide how to configure the threshold for the soils 2
         :class: device-screen-vertical side-by-side
 
 
 #. In the lower part of the view the currently available configurations are displayed. The configuration can be deleted by clicking on the delete button.
 
-      .. image:: /_static/img/05-production-soils/threshold_cultivar_3.*
-        :alt: Guide how to configure the threshold for the cultivars 3
+      .. image:: /_static/img/05-production-soils/threshold_soil_3.*
+        :alt: Guide how to configure the threshold for the soils 3
         :class: device-screen-vertical side-by-side
 
 #. To finish you must press the **Save** button
+
+
+Required fields
+===============
+
+  - The **Label**, is the name of the threshold, usually used **min**, **max**.
+  - The **Value** is the value of the threshold, it is of type double.
