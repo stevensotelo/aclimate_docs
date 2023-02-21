@@ -4,8 +4,8 @@ Geographic
 This section allows the administration of geographical parameters of the application. In terms of geographic location, the following can be managed: states, municipalities and weather stations.
 
 
-How to access the Geographical administration module?
-*****************************************************
+**How to access the Geographical administration module?**
+
 
 To access the Geographical administration module, you must go to the top menu and select the **Geographical** option.
 
