@@ -1,5 +1,7 @@
 # Enviroment
 /env
+/venv
+/.venv
 
 # Build
 /docs/build
