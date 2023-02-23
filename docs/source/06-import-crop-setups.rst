@@ -95,5 +95,7 @@ The production ranges allow managing the production levels of the different crop
           :class: device-screen-vertical side-by-side
 
 
+.. _Crop configurations:
+
 Crop configurations
 ===================
