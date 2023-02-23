@@ -184,6 +184,7 @@ Configuration state
 
 The CPT configuration is a tool that allows setting the parameters to be sent to the climate prediction model. This configuration must be performed for all the departments registered in the database.
 
+For more details, please click here :ref:`CPT setup`
 
 #. To configure the parameters, select the **Configuration** option in the last column.
 

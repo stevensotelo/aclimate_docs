@@ -27,7 +27,7 @@ The climatology module allows uploading flat files with information on historica
 
 
 How to access to the climatology module?
-************************************************
+****************************************
 
 To access to the climatology module, you must go to the top menu and select the **Import** option and in the submenu that is displayed you must select **Climatology**.
 
