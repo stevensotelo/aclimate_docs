@@ -4,6 +4,7 @@ Setups
 
 Within the Production module is the **Setups**, The setup is the option of the crop module that allows the configuration of crops for the generation of agro-climatic forecasts. Before making a configuration for any crop, it is necessary to have previously registered the climatic season, the cultivar and the soil.
 
+For more details on how to import Crop configurations and the format of the files to import, please click here :ref:`Crop configurations`
 
 What does this module allow you to do?
 **************************************

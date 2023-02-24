@@ -42,6 +42,8 @@ To access to the historical climate module, you must go to the top menu and sele
 Import historical climate
 *************************
 
+For more details on how to import historical climate and the format of the file to import, please click here :ref:`Import Monthly Data`
+
 #. To perform the import, a flat file must be prepared with the information for each weather station. This file must be in CSV format. Select the file from your device.
 
         .. image:: /_static/img/05-import-historical-climatic/import.*

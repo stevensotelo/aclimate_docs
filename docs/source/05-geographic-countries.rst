@@ -113,6 +113,8 @@ Delete countries
 
     Ethiopia has 2 more options for setting up PyCPT for sesonal and subsesonal
 
+    For more details, please click here :ref:`Configuration PyCPT`
+
     .. image:: /_static/img/05-geographic-countrys/ethiopia.*
         :alt: 2 options foe ethiopia
         :class: device-screen-vertical side-by-side

@@ -4,6 +4,17 @@ Configurations
 * Files weather station
 * Coordinates weather station
 * Forecast setup
-* CPT setup
-* Configuration PyCPT (seasonal and subseasonal)
 * Coordinates WS PyCPT
+
+.. _CPT setup:
+
+CPT setup
+=========
+
+
+
+
+.. _Configuration PyCPT:
+
+Configuration PyCPT (seasonal and subseasonal)
+==============================================

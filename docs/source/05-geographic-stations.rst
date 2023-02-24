@@ -130,6 +130,7 @@ Yield ranges
 
 The production ranges allow managing the production levels of the different crops that have been historically presented in the climatic seasons. This serves to give the users a vision of the production thresholds that occur in the locality of the different crops. There can be several levels per crop per season, however it is recommended to have 5 levels for each crop.
 
+For more details on how to import Yield Ranges and the format of the file to import, please click here :ref:`Ranges configuration`
 
 .. note::
 
@@ -181,6 +182,7 @@ Import daily data to the weather station
 The configuration is a tool that allows the addition of files to be used later in the process of generating climate predictions, by means of a csv file separated by ",".
 At the moment the only configuration being used is the daily historical data files. These files are required for the resampling process during the generation of the climate forecast.
 
+For more details on how to import daily data and the format of the file to import, please click here :ref:`Import Daily Data`
 
 #. To import daily data you must select in the last column the option **Configuration** of the weather station to which the daily data will be added.
 

@@ -58,7 +58,7 @@ The official website of `Aclimate <https://www.aclimate.org/>`_.
 .. toctree::
   :hidden:
   :maxdepth: 3
-  :caption: Importing and exporting
+  :caption: ForecastApp
 
   06-import
   06-export
