@@ -4,6 +4,8 @@ Soils
 
 Within the Production module is the **Soils**, which allows to manage the soils of the application.
 
+You can perform the process of creating and importing soils massively from the ForecastApp application by following the steps of the following link :ref:`Soil data`
+
 What does this module allow you to do?
 **************************************
 
