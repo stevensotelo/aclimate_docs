@@ -3,7 +3,6 @@ Crop setups
 
 The Forecast app allows the import of crop configurations, ranges configuration (Yield ranges) and soil data.
 
-* Soil data
 
 .. _Ranges configuration:
 
@@ -148,17 +147,26 @@ The Crop configuration is the option of the crop module that allows the configur
 
             * **dotnet CIAT.DAPA.USAID.Forecast.ForecastApp.dll** = This is the first mandatory part for all ForecastApp commands, it must be complemented with the command you want to perform.
             * **-in** = As this is an import process, the -in parameter must be used to indicate that a data import will be performed.
-            * **-cc** = This parameter indicates that an import process of range configuration will be performed, it is mandatory if you want to perform this process.
-            * **-p "ranges configuration file path"** = The -p parameter indicates the path where the file to be imported are located, this parameter is followed by the path where this file is located, example: **-p "C:\\Users\\Downloads\\Daily-20221214T155614Z-001\\Daily\\Csv\\Import\\data.csv"**
+            * **-cc** = This parameter indicates that an import process of crop configurations will be performed, it is mandatory if you want to perform this process.
+            * **-p "ranges configuration file path"** = The -p parameter indicates the path where the file to be imported are located, this parameter is followed by the path where this file is located, example: **-p "C:\\Users\\Downloads\\Daily-20221214T155614Z-001\\Daily\\Csv\\Import\\"**
                 
                 - In case you use a Linux operating system the path must be separated by **/** and in Windows you must use **\\**.
                 - Linux example: **-p "/Users/Downloads/Daily-20221214T155614Z-001/Daily/Csv/Import/"**
                 - Windows example: **-p "C:\\Users\\Downloads\\Daily-20221214T155614Z-001\\Daily\\Csv\\Import\\"**
 
-            * **-wd value** 
-            * **-stm value** 
-            * **-edm value**
-            * **-sd value**
+            * **-wd value** This parameter indicates if the config has planting window or not. Example: **-wd 1**.
+
+                - **1** if the importation will be made with planting window.
+                - **0** if the import will not be performed with planting window.
+
+            * **-stm value** = This parameter indicates the month in which the planting window starts, the possible values are from 1 to 12. Example: **-stm 6**.
+            * **-edm value** = This parameter indicates the month in which the planting window ends, the possible values are from 1 to 12. Example: **-edm 12**.
+            * **-sd value** = This parameter indicates the sowing days, the default value is 45. Example: **-sd 40**.
+
+
+            * The -wd parameter is optional, if it is not added in the command it will be 0 by default, in case you do not add the -wd parameter you should not add the -stm, -edm and -sd parameters.
+
+            * In case the -wd parameter is added, the -stm and -edm parameters will be mandatory.
 
 #. Once the command is prepared with all the parameters, copy the command in the console and press Enter, the process will perform the import of all data and once finished it will display the message **Import process has finished**.
 
@@ -266,3 +274,84 @@ Finally, to configure the run for the region it is essential to have this inform
 .. note::
 
     The above parameters must be configured by the expert for the region, since any error will cause the agroclimatic forecast not to be generated.
+
+
+
+Soil data
+=========
+
+The Forecast app allows the import of soil data, these processes can also be performed through **WebAdmin**, but it is recommended to use **Forecast app** for imports containing a lot of data or many soils, as it allows to perform the processes much faster and with a lower consumption of resources.
+
+#. To start the import you must create a folder with the file containing the soil data with each configuration you want to import.
+
+        .. image:: /_static/img/06-import-crop-setups/import_soil_1.*
+            :alt: Guide how to import soil data 1
+            :class: device-screen-vertical side-by-side
+
+#. To import daily data you must access the path where ForecastApp is located through the console, either Linux or Windows.
+
+        .. image:: /_static/img/06-import-crop-setups/import_2.*
+            :alt: Guide how to import soil data 2
+            :height: 50
+            :class: device-screen-vertical side-by-side
+
+    .. note::
+
+        If you are using Windows it is recommended to use CMD.
+
+#. To execute any ForecastApp command you must use the following line of code **dotnet CIAT.DAPA.USAID.Forecast.ForecastApp.dll** this will execute the file that will start the ForecastApp process, this command must be followed by the action you want to do.
+
+#. To execute the import of the soil data you must use the following command **dotnet CIAT.DAPA.USAID.Forecast.ForecastApp.dll -in -sli -p "soil data file path"**.
+
+        .. image:: /_static/img/06-import-crop-setups/import_soil_3.*
+            :alt: Guide how to import soil data 3
+            :class: device-screen-vertical side-by-side
+
+    .. note::
+
+        The command consists of the following parts:
+
+            * **dotnet CIAT.DAPA.USAID.Forecast.ForecastApp.dll** = This is the first mandatory part for all ForecastApp commands, it must be complemented with the command you want to perform.
+            * **-in** = As this is an import process, the -in parameter must be used to indicate that a data import will be performed.
+            * **-sli** = This parameter indicates that an import process of soil data will be performed, it is mandatory if you want to perform this process.
+            * **-p "soil data file path"** = The -p parameter indicates the path where the file to be imported are located, this parameter is followed by the path where this file is located, example: **-p "C:\\Users\\Downloads\\Daily-20221214T155614Z-001\\Daily\\Csv\\Import\\data.csv"**
+                
+                - In case you use a Linux operating system the path must be separated by **/** and in Windows you must use **\\**.
+                - Linux example: **-p "/Users/Downloads/Daily-20221214T155614Z-001/Daily/Csv/Import/"**
+                - Windows example: **-p "C:\\Users\\Downloads\\Daily-20221214T155614Z-001\\Daily\\Csv\\Import\\"**
+
+#. Once the command is prepared with all the parameters, copy the command in the console and press Enter, the process will perform the import of all data and once finished it will display the message **Import process has finished**.
+
+
+.. note::
+
+    The file must be in the following format in order to correctly import:
+
+      
+      * The first row of the file is the header and should be in the following format:
+
+            **crop,name,country,order**
+
+            - **crop** = Corresponds the Id of the crop to which the soil will be associated.
+            - **name** = Is the name of the soil.
+            - **country** = Corresponds the Id of the country to which the soil will be associated.
+            - **order** = Establishes the way to list these, the higher the number, the more will be listed first.
+
+      * The following lines should contains the information to perform the importing of the soil data. Example:
+
+            **5e91e25414daf81260ebbaeb,Clay,61e59d829d5d2486e18d2ea8,1**
+
+
+    The following is an example of what the file would look like in the excel viewer
+
+        .. image:: /_static/img/06-import-crop-setups/import_soil_example_1.*
+          :alt: How looks the import csv file 1
+          :class: device-screen-vertical side-by-side
+
+    
+    The following is an example of what the file would look like in text viewer
+
+        .. image:: /_static/img/06-import-crop-setups/import_soil_example_2.*
+          :alt: How looks the import csv file 2
+          :class: device-screen-vertical side-by-side
+
