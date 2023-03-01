@@ -1,7 +1,8 @@
 Seasonal
 ========
 
-This section describes how works the different seasonal climate forecast
+The seasonal forecast is made for two consecutive quarters, that is, six months.
+Three approaches are currently used to generate these forecasts: CPT, NextGen, and ETL. These approaches are detailed in the following sections.
 
 .. toctree::
   :hidden:

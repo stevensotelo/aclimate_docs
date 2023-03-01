@@ -5,7 +5,7 @@ General process
 
 Directories are first created using R. This refers to the entire series of folders that the script needs to read, store, and write files.
 
-Then the configurations must be extracted from the database. This is done by using a console app in netcore. These configurations contain files necessary for the forecasting process, such as: monthly historical data, daily historical data and crop configurations.
+Then the configurations must be extracted from the database. This is explained in :ref:`Importing data`. These configurations contain files necessary for the forecasting process, such as: monthly historical data, daily historical data and crop configurations.
 
 Once the configurations have been extracted from the database, we can start with the generation of the seasonal forecast. This process uses monthly data and sea level temperature data downloaded from online databases. Use the Climate Predictability Tool (CPT) model for predictions. As a result, the probability of precipitation for six months is obtained.
 

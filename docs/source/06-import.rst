@@ -1,3 +1,5 @@
+.. _Importing data:
+
 Importing data
 ##############
 
