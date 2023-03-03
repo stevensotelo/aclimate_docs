@@ -7,16 +7,103 @@ A configuration is a set of files (soil, cultivar, geographic information) linke
  
 The process begins by loading the identifiers of the station/location, cultivar, soil and the frequency of the simulations. It defines the input directories of the station/location weather settings and scenarios, as well as the output directories. Load the coordinates of the location/station and translate the climate scenarios into the format that the DSSAT models understand. Proceed to copy the configuration files with the climate scenarios and run the simulations. Once the simulations for all days are complete, the final simulation files are used to calculate the risk of water stress and land preparation days. The latter are indicators that have recently been added to the DSSAT crops module.
  
-Finally, the simulation data for each simulated day is extracted and written to a csv file as crop simulation statistics based on planting dates. So there will be a csv file for each configuration. This file has the following columns:
-
-  weather_station, soil, cultivar, start, end, measure, avg, median, min, max,
-
-  quar_1, quar_2, quar_3, conf_lower, conf_upper, sd, perc_5, perc_95, coef_var
-
-These columns are respectively the station/location id, soil id, cultivar id, simulation start date, and simulation end date. For the 'measure' column we have the following values: yield; dry days; accumulated precipitation; accumulated bio mass; maximum accumulated temperature; accumulated minimum temperature; nitrogen stress germination to booting; water stress germination to booting; nitrogen stress booting to anthesis; water stress booting to anthesis; nitrogen stress beginning to end of grain filling and water stress beginning to end of grain filling. For each of these measures, the average, median, minimum value, maximum value, quartile 1, quartile 2, quartile 3, lower confidence interval limit, upper confidence interval limit, standard deviation, 5th percentile, 95th percentile and coefficient of variation are calculated. These mentioned calculations correspond to the rest of the columns.
+Finally, the simulation data for each simulated day is extracted and written to a csv file as crop simulation statistics based on planting dates. So there will be a csv file for each configuration.
 
 The following diagram describes the process mentioned above:
 
 .. image:: /_static/img/07/07_dssat.*
   :alt: Resampling process activity diagram
   :class: device-screen-vertical side-by-side
+
+
+The csv file mentioned has the following columns:
+
+.. list-table:: CSV columns
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Column
+    - Meaning
+  
+  * - weather_station
+    - station/location id
+  * - soil
+    - soil id
+  * - cultivar
+    - cultivar id
+  * - start
+    - simulation start date
+  * - end
+    - simulation end date
+
+For the 'measure' column, the following values are available:
+
+.. list-table:: Measure column
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Measure
+    - Meaning
+
+  * - yield_0
+    - yield
+  * - d_dry
+    - dry days
+  * - prec_acu
+    - accumulated precipitation
+  * - bio_acu
+    - accumulated biomass
+  * - t_max_acu
+    - accumulated maximum temperature
+  * - t_min_acu
+    - accumulated minimum temperature
+  * - st_ger_boo_w
+    - water stress germination to booting
+  * - st_boo_ant_w
+    - water stress booting to anthesis
+  * - st_beg_end_gf_w
+    - water stress beginning to end of grain filling
+  * - st_ger_boo_n
+    - nitrogen stress germination to booting
+  * - st_boo_ant_n
+    - nitrogen stress booting to anthesis
+  * - st_beg_end_gf_n
+    - nitrogen stress beginning to end of grain filling
+  * - land_pre_day
+    - land preparation days
+
+For each measure the next colums are calculated:
+
+.. list-table:: CSV columns statistics
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Column
+    - Meaning
+
+  * - avg
+    - average
+  * - median
+    - median
+  * - min
+    - minimum value
+  * - max
+    - maximum value
+  * - quar_1
+    - quartile 1
+  * - quar_2
+    - quartile 2
+  * - quar_3
+    - quartile 3
+  * - conf_lower
+    - lower confidence interval limit
+  * - conf_upper
+    - upper confidence interval limit
+  * - sd
+    - standard deviation
+  * - perc_5
+    - 5th percentile
+  * - perc_95
+    - 95th percentile
+  * - coef_var
+    - coefficient of variation
