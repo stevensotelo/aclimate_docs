@@ -92,3 +92,15 @@ For each measure the next colums are calculated:
     - 95th percentile
   * - coef_var
     - coefficient of variation
+
+Below is an example of what the CSV looks like in Excel:
+
+.. image:: /_static/img/07/07_oryza_csv_example.*
+  :alt: Resampling process activity diagram
+  :class: device-screen-vertical side-by-side
+
+Below is an example of what the CSV looks like in a plain text viewer:
+
+.. image:: /_static/img/07/07_oryza_csv_example_2.*
+  :alt: Resampling process activity diagram
+  :class: device-screen-vertical side-by-side
