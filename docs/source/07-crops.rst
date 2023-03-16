@@ -1,7 +1,7 @@
 Crops
 =====
 
-This section describes how works the different crops models
+Aclimate uses different crop models such as Oryza or the DSSAT models. The operation, as well as the inputs and outputs of these models are explained in the following sections.
 
 .. toctree::
   :hidden:

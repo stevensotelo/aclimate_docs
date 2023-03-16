@@ -37,6 +37,12 @@ The official website of `Aclimate <https://www.aclimate.org/>`_.
   :caption: Database
 
   03-database
+  03-database-admin
+  03-database-historical
+  03-database-forecast
+  03-database-log
+  03-database-helper
+  03-database-enum
 
 .. toctree::
   :hidden:

@@ -1,7 +1,7 @@
 Scenarios
 =========
 
-This section describes how works the different climatic scenarios
+Climate scenarios are necessary in crop simulation processes. To obtain these scenarios, a statistical process called re-sampling is carried out. This process is explained in the next section.
 
 .. toctree::
   :hidden:
