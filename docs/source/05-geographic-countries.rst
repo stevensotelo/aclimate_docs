@@ -50,11 +50,22 @@ Create countries
 Required fields
 ===============
 
-  - The **Name** is the name of the country to which the state belongs
-  - The **ISO 2 country code** corresponds to the international ISO code that is assigned to each country. A list of ISO 2 codes for each country is available at http://www.nationsonline.org/oneworld/country_code_list.htm.
-  - The **Seasonal mode** with this field you can select the model to be used for sesonal.
-  - The **Subseasonal mode** with this field you can select the model to be used for subseasonal.
 
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Field
+    - Description
+  
+  * - **Name**
+    - is the name of the country to which the state belongs
+  * - **ISO 2 country code**
+    - corresponds to the international ISO code that is assigned to each country. A list of ISO 2 codes for each country is available at http://www.nationsonline.org/oneworld/country_code_list.htm.
+  * - **Seasonal mode**
+    - with this field you can select the model to be used for sesonal.
+  * - **Subseasonal mode**
+    - with this field you can select the model to be used for subseasonal.
 
 
 Edit countries

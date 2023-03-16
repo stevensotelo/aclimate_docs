@@ -55,7 +55,15 @@ Create crops
 Required fields
 ===============
 
-  - The **Crop name** is the name of the crop.
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Field
+    - Description
+  
+  * - **Crop name**
+    - is the name of the crop.
 
 
 

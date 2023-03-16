@@ -55,10 +55,19 @@ Create municipalities
 Required fields
 ===============
 
-  - The **Name of the state** in this field you must select the state to which the municipalitie will be associated.
-  - The **Name of the municipalitie** is the name of the municipalitie.
-  - The **Visible** sets whether or not to be displayed on the forecasting website.
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
 
+  * - Field
+    - Description
+  
+  * - **Name of the state**
+    - in this field you must select the state to which the municipalitie will be associated.
+  * - **Name of the municipalitie**
+    - is the name of the municipalitie.
+  * - **Visible**
+    - sets whether or not to be displayed on the forecasting website.
 
 
 Edit municipalities

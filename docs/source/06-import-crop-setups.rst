@@ -54,6 +54,30 @@ The production ranges allow managing the production levels of the different crop
 #. Once the command is prepared with all the parameters, copy the command in the console and press Enter, the process will perform the import of all data and once finished it will display the message **Import process has finished**.
 
 
+.. list-table:: CSV columns
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Column
+    - Meaning
+  
+  * - **country_name**
+    - Name of the country where the weather station is located.
+  * - **country_iso2**
+    - Corresponds to the international ISO code that is assigned to each country. A list of ISO 2 codes for each country is available at http://www.nationsonline.org/oneworld/country_code_list.htm.
+  * - **state_id**
+    - Id of the state to which the weather station belongs.
+  * - **state_name**
+    - Name of the state to which the weather station belongs.
+  * - **municipality_id**
+    - Id of the municipality to which the weather station belongs.
+  * - **municipality_name**
+    - Name of the municipality to which the weather station belongs.
+  * - **crop_id**
+    - Id of the crop to which the configurations will be associated.
+  * - **ranges**
+    - Ranges which will be imported to each weather station. Each range is made up as follows **Label\:min_value-max_value**. Example: **Very low:0-1525** and you can be grouped to import more than one range for each station, separating each range by a **","**. **"Very low:0-1525,Low:1526-1852,High:1853-2268,Very high:2269-3004"**.
+
 .. note::
 
     The file must be in the following format in order to correctly import:
@@ -64,15 +88,6 @@ The production ranges allow managing the production levels of the different crop
 
             **country_name,country_iso2,state_id,**
             **state_name,municipality_id,municipality_name,crop_id,ranges**
-
-            - **country_name** = Name of the country where the weather station is located.
-            - **country_iso2** = Corresponds to the international ISO code that is assigned to each country. A list of ISO 2 codes for each country is available at http://www.nationsonline.org/oneworld/country_code_list.htm.
-            - **state_id** = Id of the state to which the weather station belongs.
-            - **state_name** = Name of the state to which the weather station belongs.
-            - **municipality_id** = Id of the municipality to which the weather station belongs.
-            - **municipality_name** = Name of the municipality to which the weather station belongs.
-            - **crop_id** = Id of the crop to which the configurations will be associated.
-            - **ranges** = Ranges which will be imported to each weather station. Each range is made up as follows **Label\:min_value-max_value**. Example: **Very low:0-1525** and you can be grouped to import more than one range for each station, separating each range by a **","**. **"Very low:0-1525,Low:1526-1852,High:1853-2268,Very high:2269-3004"**.
 
       * The following lines should contains the information to perform the importing of the ranges. Example:
 
@@ -194,11 +209,23 @@ The file "coordinates.csv" (it should always be saved with this name) should be 
                 :alt: Oryza example 1
                 :class: device-screen-vertical side-by-side
 
-.. note::
 
-    - lat = latitud
-    - long = longitud
-    - elev = elevación
+.. list-table:: Abbreviations
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Abbreviation
+    - Meaning
+  
+  * - lat
+    - latitud
+  * - long
+    - longitud
+  * - elev
+    - elevation
+
+
+.. note::
 
 
     Decimal separators in this case are given by **'.'** (period).
@@ -323,36 +350,46 @@ The Forecast app allows the import of soil data, these processes can also be per
 
 #. Once the command is prepared with all the parameters, copy the command in the console and press Enter, the process will perform the import of all data and once finished it will display the message **Import process has finished**.
 
+.. list-table:: CSV columns
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Column
+    - Meaning
+  
+  * - **crop**
+    - Corresponds the Id of the crop to which the soil will be associated.
+  * - **name**
+    - Is the name of the soil.
+  * - **country**
+    - Corresponds the Id of the country to which the soil will be associated.
+  * - **order**
+    - Establishes the way to list these, the higher the number, the more will be listed first.
 
 .. note::
 
-    The file must be in the following format in order to correctly import:
-
-      
-      * The first row of the file is the header and should be in the following format:
-
-            **crop,name,country,order**
-
-            - **crop** = Corresponds the Id of the crop to which the soil will be associated.
-            - **name** = Is the name of the soil.
-            - **country** = Corresponds the Id of the country to which the soil will be associated.
-            - **order** = Establishes the way to list these, the higher the number, the more will be listed first.
-
-      * The following lines should contains the information to perform the importing of the soil data. Example:
-
-            **5e91e25414daf81260ebbaeb,Clay,61e59d829d5d2486e18d2ea8,1**
-
-
-    The following is an example of what the file would look like in the excel viewer
-
-        .. image:: /_static/img/06-import-crop-setups/import_soil_example_1.*
-          :alt: How looks the import csv file 1
-          :class: device-screen-vertical side-by-side
+  The file must be in the following format in order to correctly import:
 
     
-    The following is an example of what the file would look like in text viewer
+    * The first row of the file is the header and should be in the following format:
 
-        .. image:: /_static/img/06-import-crop-setups/import_soil_example_2.*
-          :alt: How looks the import csv file 2
-          :class: device-screen-vertical side-by-side
+          **crop,name,country,order**
+
+    * The following lines should contains the information to perform the importing of the soil data. Example:
+
+          **5e91e25414daf81260ebbaeb,Clay,61e59d829d5d2486e18d2ea8,1**
+
+
+  The following is an example of what the file would look like in the excel viewer
+
+      .. image:: /_static/img/06-import-crop-setups/import_soil_example_1.*
+        :alt: How looks the import csv file 1
+        :class: device-screen-vertical side-by-side
+
+  
+  The following is an example of what the file would look like in text viewer
+
+      .. image:: /_static/img/06-import-crop-setups/import_soil_example_2.*
+        :alt: How looks the import csv file 2
+        :class: device-screen-vertical side-by-side
 

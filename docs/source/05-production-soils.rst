@@ -57,10 +57,22 @@ Create soils
 Required fields
 ===============
 
-  - The **Country**, you must select the country to which the soil will be associated.
-  - The **Soil Name** is the name of the soil.
-  - The **Crop**, you must select the crop to which the soil will be associated.
-  - The **Order** establishes the way to list these, the higher the number, the more will be listed first.
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Field
+    - Description
+  
+  * - **Country**
+    - you must select the country to which the soil will be associated.
+  * - **Soil Name**
+    - is the name of the soil.
+  * - **Crop**
+    - you must select the crop to which the soil will be associated.
+  * - **Order**
+    - establishes the way to list these, the higher the number, the more will be listed first.
+
 
 
 .. note::
@@ -149,5 +161,14 @@ Soil thresholds
 Required fields
 ===============
 
-  - The **Label**, is the name of the threshold, usually used **min**, **max**.
-  - The **Value** is the value of the threshold, it is of type double.
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Field
+    - Description
+  
+  * - **Label**
+    - is the name of the threshold, usually used **min**, **max**.
+  * - **Value**
+    - is the value of the threshold, it is of type double.

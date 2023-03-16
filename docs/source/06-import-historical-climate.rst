@@ -76,45 +76,68 @@ Daily historical data files are required for the resampling process during the g
         The process will create a folder called **tmp** inside the path used in the command, in this folder will be moved the files that were successfully imported, in case the process finishes and some file has not been moved to the **tmp** folder is because some error occurred while importing that file.
 
 
+.. list-table:: CSV columns
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Column
+    - Meaning
+  
+  * - day
+    - day of the month - number type
+  * - month
+    - month of the year - number type
+  * - year
+    - year - number type
+  * - t_max
+    - maximum temperature °C - double type
+  * - t_min
+    - minimum temperature °C - double type
+  * - prec
+    - precipitation mm - double type
+  * - sol_rad
+    - solar radiation MJ/m²d - double type
+
+
 .. note::
 
-    The file must be in the following format in order to correctly generate the resampling:
+  The file must be in the following format in order to correctly generate the resampling:
 
-      * This file should contain information on at least 30 years of historical data.
+    * This file should contain information on at least 30 years of historical data.
 
-      * The data it contains are: **day**, **month**, **year**, maximum temperature (**t_max**), minimum temperature (**t_min**), precipitation (**prec**) and solar radiation (**sol_rad**).
-      
-      * The first row of the file is the header and should be in the following format:
-
-            - **day,month,year,t_max,t_min,prec,sol_rad**
-
-      * The following lines should contain the information for this station. Example:
-
-            - **1,1,1980,30.67449154,22.67449154,0,16.37537505**
-      
-      * The units of measurement for each variable are: 
-      
-            - **t_max** = °C 
-            - **t_min** = °C 
-            - **prec** = mm
-            - **sol_rad** = MJ/m²d
-
-
-    The following is an example of what the file would look like in the excel viewer
-
-        .. image:: /_static/img/06-import-historical-climate/import_example_1.*
-          :alt: How looks the import csv file 1
-          :class: device-screen-vertical side-by-side
-
+    * The data it contains are: **day**, **month**, **year**, maximum temperature (**t_max**), minimum temperature (**t_min**), precipitation (**prec**) and solar radiation (**sol_rad**).
     
-    The following is an example of what the file would look like in text viewer
+    * The first row of the file is the header and should be in the following format:
 
-        .. image:: /_static/img/06-import-historical-climate/import_example_2.*
-          :alt: How looks the import csv file 2
-          :class: device-screen-vertical side-by-side
-      
+        - **day,month,year,t_max,t_min,prec,sol_rad**
 
-    The files imported into the system are stored within the administration website in the Data/Configurations folder, the name of the files consists of the date (format yyyyMMddHHmmss), an antenna name (-wsconf-), the weather station id, an antenna name (-) and ends with the name of the file itself that was uploaded.
+    * The following lines should contain the information for this station. Example:
+
+        - **1,1,1980,30.67449154,22.67449154,0,16.37537505**
+    
+    * The units of measurement for each variable are: 
+    
+        - **t_max** = °C 
+        - **t_min** = °C 
+        - **prec** = mm
+        - **sol_rad** = MJ/m²d
+
+
+  The following is an example of what the file would look like in the excel viewer
+
+      .. image:: /_static/img/06-import-historical-climate/import_example_1.*
+        :alt: How looks the import csv file 1
+        :class: device-screen-vertical side-by-side
+
+  
+  The following is an example of what the file would look like in text viewer
+
+      .. image:: /_static/img/06-import-historical-climate/import_example_2.*
+        :alt: How looks the import csv file 2
+        :class: device-screen-vertical side-by-side
+    
+
+  The files imported into the system are stored within the administration website in the Data/Configurations folder, the name of the files consists of the date (format yyyyMMddHHmmss), an antenna name (-wsconf-), the weather station id, an antenna name (-) and ends with the name of the file itself that was uploaded.
 
 
 .. warning::
@@ -189,6 +212,20 @@ Monthly data is very important for the platform, this data is used for the proce
             :alt: Guide how to import daily data stations 4
             :class: device-screen-vertical side-by-side
 
+
+.. list-table:: CSV columns
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Column
+    - Meaning
+  
+  * - year
+    - year - number type
+  * - month
+    - month of the year - number type
+  * - name of the point
+    - It can be a id, string or extension id
 
 .. note::
 

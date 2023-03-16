@@ -50,10 +50,22 @@ Create users
 Required fields
 ===============
 
-  - The **Email** is an active email account, with the following pattern example@example.example
-  - The **Roles** define the user's profile and to which sites they have access.
-  - The **Password** is the user's key to enter the platform, password must contain at least 8 characters and maximun 100
-  - The **Confirmar password** this field helps to verify that you typed the password correctly, it must be exactly the same as the **Password** field (It is case sensitive)
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Field
+    - Description
+  
+  * - **Email**
+    - is an active email account, with the following pattern example@example.example
+  * - **Roles**
+    - define the user's profile and to which sites they have access.
+  * - **Password**
+    - is the user's key to enter the platform, password must contain at least 8 characters and maximun 100
+  * - **Confirmar password**
+    - this field helps to verify that you typed the password correctly, it must be exactly the same as the **Password** field (It is case sensitive)
+
 
 .. note::
 

@@ -54,6 +54,53 @@ Import historical yield
 #. Finally, click on the Import button.
 
 
+.. list-table:: Explanation of each column
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Column
+    - Meaning
+
+  * - weather_station
+    - weather station code - string type
+  * - soil
+    - soil code - string type
+  * - cultivar
+    - cultivar code - string type
+  * - start
+    - date of initial planting - format (**yyyy-MM-dd**)
+  * - end
+    - final planting date - format (**yyyy-MM-dd**)
+  * - measure
+    - measure (yield_14 - yield at 14% moisture, yield_0 - yield at 0% moisture, d_har - days to harvest, d_dry - days to drying, prec_acu - cumulative precipitation, t_max_acu - cumulative maximum temperature, t_min_acu - cumulative minimum temperature, bio_acu - cumulative biomass, et_acu - cumulative evapotranspiration).
+  * - median
+    - median - numeric type
+  * - avg
+    - average - numeric type
+  * - min
+    - minimum value - numeric type
+  * - max
+    - maximum value - numeric type
+  * - quar_1
+    - first quartile - numeric type
+  * - quar_2
+    - second quartile - numeric type
+  * - quar_3
+    - third quartile - numeric type
+  * - conf_lower
+    - lower confidence interval limit - numeric type
+  * - conf_upper
+    - upper bound of confidence interval - numeric type
+  * - sd
+    - standard deviation - numeric type
+  * - perc_5
+    - 5th percentile - numeric type
+  * - perc_95
+    - 95th percentile - numeric type
+  * - coef_var
+    - coefficient of variation - numeric type
+
+
 
 The file must have the following format:
 
@@ -63,27 +110,6 @@ The file must have the following format:
         **start,end,measure,**
         **median,avg,min,max,quar_1,quar_2,quar_3,conf_lower,conf_upper,sd,perc_5,perc_95,coef_var**
 
-    - Explanation of each column
-
-        * **weather_station** = weather station code
-        * **soil** = soil code 
-        * **cultivar** = cultivar code
-        * **start** = date of initial planting. Format (**yyyy-MM-dd**)
-        * **end** = final planting date. Format (**yyyy-MM-dd**)
-        * **measure** = measure (yield_14 - yield at 14% moisture, yield_0 - yield at 0% moisture, d_har - days to harvest, d_dry - days to drying, prec_acu - cumulative precipitation, t_max_acu - cumulative maximum temperature, t_min_acu - cumulative minimum temperature, bio_acu - cumulative biomass, et_acu - cumulative evapotranspiration).
-        * **median** = Median
-        * **avg** = Average
-        * **min** = Minimum
-        * **max** = Maximum
-        * **quar_1** = First quartile
-        * **quar_2** = Second quartile
-        * **quar_3** = Third quartile
-        * **conf_lower** = Lower confidence interval lower limit
-        * **conf_upper** = Upper bound of confidence interval
-        * **sd** = Standard deviation
-        * **perc_5** = 5th percentile
-        * **perc_95** = 95th percentile
-        * **coef_var** = Coefficient of variation
 
 
     - The following lines contain the production history information. Example:
@@ -91,7 +117,11 @@ The file must have the following format:
         **58504f5d006cb93ed40eec4e,5851ab2c47847d1f144b83ff,58505210c290272c481111b1,**
         **1980-01-01,1980-01-05,yield_14,**
         **8582.2,8582.2,8582.2,8582.2,8582.2,8582.2,8582.2,0,0,0,8582.2,8582.2,0**
-    
+
+
+
+
+   
 The following is an example of what the file would look like in the excel viewer
 
     .. image:: /_static/img/05-import-historical-crop/import_example_1.*
