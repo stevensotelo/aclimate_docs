@@ -55,13 +55,28 @@ Create weather stations
 Required fields
 ===============
 
-    - The **Municipality** is the municipality with which the weather station is associated.
-    - The **Name** is the name of the weather station.
-    - The **Source** of origin establishes who provides the information.
-    - The **External code** is the station code of the station's provider.
-    - The **Visible** sets whether or not to display it on the forecast website. **It is also used to know which stations are to receive the weather forecast**.
-    - The **Latitude** sets in geographic coordinates the location of the station.
-    - The **Longitude** sets in geographic coordinates the location of the station.
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Field
+    - Description
+  
+  * - **Municipality**
+    - is the municipality with which the weather station is associated.
+  * - **Name**
+    - is the name of the weather station.
+  * - **Source**
+    - of origin establishes who provides the information.
+  * - **External code**
+    - is the station code of the station's provider.
+  * - **Visible**
+    - sets whether or not to display it on the forecast website. **It is also used to know which stations are to receive the weather forecast**.
+  * - **Latitude**
+    - sets in geographic coordinates the location of the station.
+  * - **Longitude**
+    - sets in geographic coordinates the location of the station.
+
 
 Optional fields
 ===============
@@ -168,11 +183,21 @@ For more details on how to import Yield Ranges and the format of the file to imp
 Required fields
 ===============
 
-    - The **Crop** is the crop with which the configuration will be associated.
-    - The **Description** is the levels that are generally added, usually are: Low, Fair, Normal, Good, Excellent.
-    - The **Lower limit** is the lower limit in the configuration, the recommended minimum value to use is 0. The unit of measurement to be used in this case is Kg/ha.
-    - The **Upper limit** is the upper limit in the configuration, the recommended maximum value to use is 99999. The unit of measurement to be used in this case is Kg/ha.
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
 
+  * - Field
+    - Description
+  
+  * - **Crop**
+    - is the crop with which the configuration will be associated.
+  * - **Description**
+    - is the levels that are generally added, usually are: Low, Fair, Normal, Good, Excellent.
+  * - **Lower limit**
+    - is the lower limit in the configuration, the recommended minimum value to use is 0. The unit of measurement to be used in this case is Kg/ha.
+  * - **Upper limit**
+    - is the upper limit in the configuration, the recommended maximum value to use is 99999. The unit of measurement to be used in this case is Kg/ha.
 
 
 
@@ -204,6 +229,28 @@ For more details on how to import daily data and the format of the file to impor
 
 #. To finish you must press the **Save** button
 
+
+.. list-table:: CSV columns
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Column
+    - Meaning
+  
+  * - day
+    - day of the month - number type
+  * - month
+    - month of the year - number type
+  * - year
+    - year - number type
+  * - t_max
+    - maximum temperature °C - double type
+  * - t_min
+    - minimum temperature °C - double type
+  * - prec
+    - precipitation mm - double type
+  * - sol_rad
+    - solar radiation MJ/m²d - double type
 
 .. note::
 
@@ -244,3 +291,4 @@ For more details on how to import daily data and the format of the file to impor
       
 
     The files imported into the system are stored within the administration website in the Data/Configurations folder, the name of the files consists of the date (format yyyyMMddHHmmss), an antenna name (-wsconf-), the weather station id, an antenna name (-) and ends with the name of the file itself that was uploaded.
+

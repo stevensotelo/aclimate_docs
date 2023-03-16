@@ -56,7 +56,16 @@ Create sources
 Required fields
 ===============
 
-  - The **Name** is a description of the source
+
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Field
+    - Description
+  
+  * - **Name**
+    - is a description of the source.
 
 
 .. note::

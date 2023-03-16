@@ -67,6 +67,19 @@ For more details on how to import historical climate and the format of the file 
 
 #. Finally, click on the Import button.
 
+.. list-table:: CSV columns
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Column
+    - Meaning
+  
+  * - year
+    - year - number type
+  * - month
+    - month of the year - number type
+  * - name of the point
+    - It can be a id, string or extension id
 
 .. note::
 

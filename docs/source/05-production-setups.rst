@@ -68,12 +68,25 @@ Create setups
 Required fields
 ===============
 
-  - The **Crop** you must select the crop to which the setup will be associated.
-  - The **Weather station** you must select the weather station to which the setup will be associated.
-  - The **Cultivar** you must select the cultivar to which the setup will be associated.
-  - The **Soil** you must select the soil to which the setup will be associated.
-  - The **Days** is used to represent the date interval in which the agro-climatic forecast can be made between sowing dates. If you want to see the variation that can occur day by day in each of the sowing dates, the value that should go there is 1; but if, on the contrary, what you want is to observe the variation that occurs weekly, the value that should go there is 7.
-  - **Configurations files**
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Field
+    - Description
+  
+  * - **Crop**
+    - you must select the crop to which the setup will be associated.
+  * - **Weather station**
+    - you must select the weather station to which the setup will be associated.
+  * - **Cultivar**
+    - you must select the cultivar to which the setup will be associated.
+  * - **Soil**
+    - you must select the soil to which the setup will be associated.
+  * - **Days**
+    - is used to represent the date interval in which the agro-climatic forecast can be made between sowing dates. If you want to see the variation that can occur day by day in each of the sowing dates, the value that should go there is 1; but if, on the contrary, what you want is to observe the variation that occurs weekly, the value that should go there is 7.
+  * - **Configurations files**
+    - Files to upload
 
 
 .. note::
@@ -103,11 +116,21 @@ The file "coordinates.csv" (it should always be saved with this name) should be 
                 :alt: Oryza example 1
                 :class: device-screen-vertical side-by-side
 
-.. note::
+.. list-table:: Abbreviations
+  :widths: 25 25
+  :header-rows: 1
 
-    - lat = latitud
-    - long = longitud
-    - elev = elevación
+  * - Abbreviation
+    - Meaning
+  
+  * - lat
+    - latitud
+  * - long
+    - longitud
+  * - elev
+    - elevation
+
+.. note::
 
 
     Decimal separators in this case are given by **'.'** (period).

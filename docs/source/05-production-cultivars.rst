@@ -55,12 +55,25 @@ Create cultivars
 Required fields
 ===============
 
-  - The **Country**, you must select the country to which the cultivar will be associated.
-  - The **Variety name** is the name of the cultivar.
-  - The **Crop**, you must select the crop to which the cultivar will be associated.
-  - The **Order** establishes the way to list these, the higher the number, the more will be listed first.
-  - **Is rainfed** indicates whether the cultivar is rainfed or irrigated.
-  - **Is national** indicates whether the material is national or imported.
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Field
+    - Description
+  
+  * - **Country**
+    - you must select the country to which the cultivar will be associated.
+  * - **Variety name**
+    - is the name of the cultivar.
+  * - **Crop**
+    - you must select the crop to which the cultivar will be associated.
+  * - **Order**
+    - establishes the way to list these, the higher the number, the more will be listed first.
+  * - **Is rainfed**
+    - indicates whether the cultivar is rainfed or irrigated.
+  * - **Is national**
+    - indicates whether the material is national or imported.
 
 
 .. note::
@@ -149,5 +162,15 @@ Cultivar thresholds
 Required fields
 ===============
 
-  - The **Label**, is the name of the threshold, usually used **min**, **max**.
-  - The **Value** is the value of the threshold, it is of type double.
+
+.. list-table:: Required fields
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Field
+    - Description
+  
+  * - **Label**
+    - is the name of the threshold, usually used **min**, **max**.
+  * - **Value**
+    - is the value of the threshold, it is of type double.

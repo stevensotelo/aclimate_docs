@@ -55,6 +55,20 @@ Import Climatology
 
 #. Finally, click on the Import button.
 
+.. list-table:: CSV columns
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Column
+    - Meaning
+  
+  * - measure
+    - name of the measure - string type
+  * - month
+    - month of the year - number type
+  * - name of the point
+    - It can be a id, string or extension id
+
 
 .. note::
 
