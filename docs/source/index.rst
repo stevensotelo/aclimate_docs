@@ -42,7 +42,7 @@ The official website of `Aclimate <https://www.aclimate.org/>`_.
   03-database-forecast
   03-database-log
   03-database-helper
-  03-database-enum
+  03-database-enums
 
 .. toctree::
   :hidden:
