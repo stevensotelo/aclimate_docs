@@ -579,7 +579,9 @@ Finally, to configure the run for the region it is essential to have this inform
 
 **crop_conf.csv**
 
-.. list-table:: CSV columns
+.. _Crop configuration:
+
+.. list-table:: Crop configuration
   :widths: 25 25
   :header-rows: 1
 

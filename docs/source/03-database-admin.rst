@@ -7,7 +7,7 @@ ad_source
 
 This collection contains the different system sources used to identify the historical production data, This collection contains the following parameters:
 
-.. list-table:: Data base table
+.. list-table:: Data base collection
   :widths: 25 25 25
   :header-rows: 1
 
@@ -38,7 +38,7 @@ ad_user_permission
 
 This collection contains the records of the permissions of each one of the users to the different countries, This collection contains the following parameters:
 
-.. list-table:: Data base table
+.. list-table:: Data base collection
   :widths: 25 25 25
   :header-rows: 1
 
@@ -71,7 +71,7 @@ Users
 
 This collection contains the users who have access to the system, This collection contains the following parameters:
 
-.. list-table:: Data base table
+.. list-table:: Data base collection
   :widths: 25 25 25
   :header-rows: 1
 
@@ -110,7 +110,7 @@ Roles
 
 This collection contains each of the system roles, This collection contains the following parameters:
 
-.. list-table:: Data base table
+.. list-table:: Data base collection
   :widths: 25 25 25
   :header-rows: 1
 

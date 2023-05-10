@@ -194,6 +194,9 @@ These Enums are used in PyCPT modules.
     - Subseasonal
 
 
+.. _Quarter:
+
+
 Quarter
 =======
 
@@ -358,3 +361,65 @@ This enums represents the events that can be performed on the application.
     - Error in the application
   * - exc
     - Exception in the application
+
+
+
+Obs
+===
+
+.. list-table:: Enum Definition
+  :widths: 25
+  :header-rows: 1
+
+  * - Variable
+
+  * - CPC_CMAP_URD
+  * - CHIRPS
+  * - TRMM
+  * - CPC
+  * - Chilestations
+  * - ENACT
+
+
+
+Mos
+===
+
+.. list-table:: Enum Definition
+  :widths: 25
+  :header-rows: 1
+
+  * - Variable
+
+  * - PCR
+  * - CCA
+  * - None
+
+
+Predictand
+==========
+
+.. list-table:: Enum Definition
+  :widths: 25
+  :header-rows: 1
+
+  * - Variable
+
+  * - PRCP
+  * - RFREQ
+
+
+Predictors
+==========
+
+.. list-table:: Enum Definition
+  :widths: 25
+  :header-rows: 1
+
+  * - Variable
+
+  * - PRCP
+  * - GCM
+  * - VQ
+  * - UQ
+  * - T2M

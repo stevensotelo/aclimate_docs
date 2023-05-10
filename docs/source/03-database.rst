@@ -16,15 +16,3 @@ The collections are divided into different categories:
 * **ad:** Collections related to system administration, contain user data, roles, etc.
 
 * **log:** Collections with system event log data, errors etc.
-
-
-.. toctree::
-  :hidden:
-  :maxdepth: 1
-
-  03-database-admin
-  03-database-enums
-  03-database-forecast
-  03-database-helper
-  03-database-historical
-  03-database-log

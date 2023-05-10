@@ -6,7 +6,7 @@ hs_climatology
 
 This collection contains the historical climatic data by month of each of the weather stations, This collection contains the following parameters:
 
-.. list-table:: Data base table
+.. list-table:: Data base collection
   :widths: 25 25 25
   :header-rows: 1
 
@@ -42,7 +42,7 @@ hs_historical_climatic
 
 This collection contains the historical data of each year of each weather station, This collection contains the following parameters:
 
-.. list-table:: Data base table
+.. list-table:: Data base collection
   :widths: 25 25 25
   :header-rows: 1
 
@@ -82,7 +82,7 @@ hs_historical_yield
 
 This collection contains the historical data of the yield data, This collection contains the following parameters:
 
-.. list-table:: Data base table
+.. list-table:: Data base collection
   :widths: 25 25 25
   :header-rows: 1
 
