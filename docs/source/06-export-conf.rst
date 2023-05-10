@@ -298,6 +298,7 @@ At the end of the export, the **prediccionClimatica** folder will be generated a
           :alt: How looks the export csv file 2
           :class: device-screen-vertical side-by-side
 
+.. _Forecast Meanings:
 
 .. list-table:: Meanings
   :widths: 25 25
@@ -578,7 +579,9 @@ Finally, to configure the run for the region it is essential to have this inform
 
 **crop_conf.csv**
 
-.. list-table:: CSV columns
+.. _Crop configuration:
+
+.. list-table:: Crop configuration
   :widths: 25 25
   :header-rows: 1
 

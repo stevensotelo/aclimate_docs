@@ -54,6 +54,7 @@ Import historical yield
 #. Finally, click on the Import button.
 
 
+
 .. list-table:: Explanation of each column
   :widths: 25 25
   :header-rows: 1

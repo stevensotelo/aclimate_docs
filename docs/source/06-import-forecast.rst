@@ -257,6 +257,7 @@ The following is an example of what the file would look like in text viewer
 
 
 
+
 **Import historical yield**
 
 
@@ -277,7 +278,9 @@ The following is an example of what the file would look like in text viewer
 #. Finally, click on the Import button.
 
 
-.. list-table:: Explanation of each column
+.. _Yield data:
+
+.. list-table:: Yield data Explanation of each column
   :widths: 25 25
   :header-rows: 1
 
