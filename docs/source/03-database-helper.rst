@@ -1,220 +1,11 @@
 Helpers structures
 ##################
 
-cp_crop
-=======
 
-This collection contains all crops with their respective settings, This collection contains the following parameters:
-
-.. list-table:: Data base collection
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Definition
-    - Type
-  
-  * - _id
-    - Unique identifier
-    - ObjectId
-  * - name
-    - This parameter corresponds to the name of the crop
-    - String
-  * - track
-    - This object contains the registration data, if it is active within the system, date of registration in the system and date of updates.
-    - Object
-  * - crop_conf
-    - This parameter contains the different crop configurations, having the maximum and minimum values for each phenological phase.
-    - Array
-
-
-.. note::
-
-
-    To know more about the parameters inside the **crop_conf** array: :ref:`Crop configuration`
-
-
-
-.. image:: /_static/img/03-database-helper/cp_crop_model.*
-    :alt: Model of the collection cp_crop
-    :class: device-screen-vertical side-by-side
-
-
-
-
-cp_cultivar
-===========
-
-This collection contains all Cultivars of the system, This collection contains the following parameters:
-
-.. list-table:: Data base collection
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Definition
-    - Type
-  
-  * - _id
-    - Unique identifier
-    - ObjectId
-  * - name
-    - This parameter corresponds to the name of the crop
-    - String
-  * - crop
-    - This parameter corresponds to the Id of the crop to which the cultivar belongs.
-    - ObjectId
-  * - order
-    - This parameter establishes the way to list these, the higher the number, the more will be listed first.
-    - Integer
-  * - rainfed
-    - This parameter indicates whether the cultivar is rainfed or irrigated.
-    - Bool
-  * - national
-    - This parameter indicates whether the material is national or imported.
-    - Bool
-  * - country
-    - This parameter corresponds to the Id of the country to which the cultivar belongs.
-    - ObjectId
-  * - track
-    - This object contains the registration data, if it is active within the system, date of registration in the system and date of updates.
-    - Object
-  * - threshold
-    - This parameter corresponds to the different thresholds of the cultivar, with their respective name and value.
-    - Array
-
-
-.. image:: /_static/img/03-database-helper/cp_cultivar_model.*
-    :alt: Model of the collection cp_cultivar
-    :class: device-screen-vertical side-by-side
-
-
-cp_recommendation
-=================
-
-This collection contains all Cultivars of the system, This collection contains the following parameters:
-
-.. list-table:: Data base collection
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Definition
-    - Type
-  
-  * - _id
-    - Unique identifier
-    - ObjectId
-  * - country
-    - This parameter corresponds to the Id of the country to which the recommendation belongs.
-    - ObjectId
-  * - type_enum
-    - This parameter contains the type of enum to which the recommendation belongs.
-    - String
-  * - type_resp
-    - This parameter contains the type of response to which the recommendation belongs.
-    - String
-  * - resp
-    - This parameter contains the response to which the replacements of the variables will be made.
-    - String
-
-
-.. image:: /_static/img/03-database-helper/cp_recommendation_model.*
-    :alt: Model of the collection cp_recommendation
-    :class: device-screen-vertical side-by-side
-
-
-
-cp_setup
-========
-
-This parameter contains the configurations of the crops and their respective soils and cultivars, for the execution of the crop model process, This collection contains the following parameters:
-
-.. list-table:: Data base collection
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Definition
-    - Type
-  
-  * - _id
-    - Unique identifier
-    - ObjectId
-  * - weather_station
-    - This parameter contains the Id of the weather station to which the configuration belongs.
-    - ObjectId
-  * - cultivar
-    - This parameter contains the Id of the cultivar to which the configuration belongs.
-    - ObjectId
-  * - soil
-    - This parameter contains the Id of the soil to which the configuration belongs.
-    - ObjectId
-  * - crop
-    - This parameter contains the Id of the crop to which the configuration belongs.
-    - ObjectId
-  * - days
-    - This parameter represents the number of days that are used when running the crop model.
-    - Double
-  * - config_files
-    - This parameter contains each of the files that this configuration contains, with the name, the path from which the file should be copied, and the date of registration.
-    - Array
-  * - track
-    - This object contains the registration data, if it is active within the system, date of registration in the system and date of updates.
-    - Object
-
-
-.. image:: /_static/img/03-database-helper/cp_setup_model.*
-    :alt: Model of the collection cp_setup
-    :class: device-screen-vertical side-by-side
-
-
-
-cp_soil
-=======
-
-This collection contains all soils of the system, This collection contains the following parameters:
-
-.. list-table:: Data base collection
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Definition
-    - Type
-  
-  * - _id
-    - Unique identifier.
-    - ObjectId
-  * - name
-    - This parameter corresponds to the name of the soil.
-    - String
-  * - country
-    - This parameter corresponds to the Id of the country to which the soil belongs.
-    - ObjectId
-  * - order
-    - This parameter establishes the way to list these, the higher the number, the more will be listed first.
-    - Integer
-  * - crop
-    - This parameter contains the Id of the crop to which the soil belongs.
-    - ObjectId
-  * - track
-    - This object contains the registration data, if it is active within the system, date of registration in the system and date of updates.
-    - Object
-  * - threshold
-    - This parameter corresponds to the different thresholds of the soil, with their respective name and value.
-    - Array
-
-
-.. image:: /_static/img/03-database-helper/cp_soil_model.*
-    :alt: Model of the collection cp_soil
-    :class: device-screen-vertical side-by-side
-
-
-lc_country
+yield_data
 ==========
 
-This collection contains all countries of the system, This collection contains the following parameters:
+This entity represents the data of crop yield for different variables, This collection contains the following parameters:
 
 .. list-table:: Data base collection
   :widths: 25 25 25
@@ -223,43 +14,63 @@ This collection contains all countries of the system, This collection contains t
   * - Parameter
     - Definition
     - Type
-  
-  * - _id
-    - Unique identifier
-    - ObjectId
-  * - name
-    - This parameter corresponds to the name of the country.
-    - String
-  * - iso2
-    - This parameter contains the Iso2 format of the corresponding country. To know the format of the countries, you can access the following link: http://www.nationsonline.org/oneworld/country_code_list.htm.
-    - String
-  * - track
-    - This object contains the registration data, if it is active within the system, date of registration in the system and date of updates.
-    - Object
-  * - conf_pycpt
-    - This parameter corresponds to the configuration for seasonal forecast using pypct.
-    - Array
-  * - subseasonal_pycpt
-    - This parameter corresponds to the configuration for subseasonal forecast using pypct.
-    - Array
-  * - seasonal_mode
-    - This parameter corresponds to the mode in which the country executes seasonal climate forecast.
-    - Integer
-  * - subseasonal_mode
-    - This parameter corresponds to the mode in which the country executes subseasonal climate forecast.
-    - Integer
 
 
-.. image:: /_static/img/03-database-helper/lc_country_model.*
-    :alt: Model of the collection lc_country
+  * - measure
+    - Name of the measured variable
+    - MeasureYield
+  * - avg
+    - average
+    - Double
+  * - median
+    - median
+    - Double
+  * - min
+    - minimum value
+    - Double
+  * - max
+    - maximum value
+    - Double
+  * - quar_1
+    - quartile 1
+    - Double
+  * - quar_2
+    - quartile 2
+    - Double
+  * - quar_3
+    - quartile 3
+    - Double
+  * - conf_lower
+    - lower confidence interval limit
+    - Double
+  * - conf_upper
+    - upper confidence interval limit
+    - Double
+  * - sd
+    - standard deviation
+    - Double
+  * - perc_5
+    - 5th percentile
+    - Double
+  * - perc_95
+    - 95th percentile
+    - Double
+  * - coef_var
+    - coefficient of variation
+    - Double
+
+
+
+.. image:: /_static/img/03-database-helper/yield_data_model.*
+    :alt: Model of the collection yield_data_model
     :class: device-screen-vertical side-by-side
 
+  
 
+yield_crop
+==========
 
-lc_municipality
-===============
-
-This collection contains all municipalities of the system, This collection contains the following parameters:
+This entity represents the yield of a cultivar, a soil for a weather station, This collection contains the following parameters:
 
 .. list-table:: Data base collection
   :widths: 25 25 25
@@ -268,34 +79,30 @@ This collection contains all municipalities of the system, This collection conta
   * - Parameter
     - Definition
     - Type
-  
-  * - _id
-    - Unique identifier
-    - ObjectId
-  * - state
-    - This parameter corresponds to the Id of the state to which the municipality belongs.
-    - ObjectId
-  * - name
-    - This parameter corresponds to the name of the municipality.
-    - String
-  * - visible
-    - This parameter allows you to activate or deactivate the municipality within the different AClimate pages and also in the forecast process.
-    - Bool
-  * - track
-    - This object contains the registration data, if it is active within the system, date of registration in the system and date of updates.
-    - Object
 
 
-.. image:: /_static/img/03-database-helper/lc_municipality_model.*
-    :alt: Model of the collection lc_municipality
+  * - start
+    - Start date of the result of prediction
+    - Date
+  * - end
+    - End date of the result of prediction
+    - Date
+  * - data
+    - List of variables results yield forecasts
+    - Array of YieldData
+
+
+
+
+.. image:: /_static/img/03-database-helper/yield_crop_model.*
+    :alt: Model of the collection yield_crop_model
     :class: device-screen-vertical side-by-side
 
 
+probability
+===========
 
-lc_state
-========
-
-This collection contains all states of the system, This collection contains the following parameters:
+This entity represents the probabilities of the variables of climate prediction, This collection contains the following parameters:
 
 .. list-table:: Data base collection
   :widths: 25 25 25
@@ -304,43 +111,33 @@ This collection contains all states of the system, This collection contains the 
   * - Parameter
     - Definition
     - Type
-  
-  * - _id
-    - Unique identifier
-    - ObjectId
-  * - country
-    - This parameter corresponds to the Id of the country to which the state belongs.
-    - ObjectId
-  * - name
-    - This parameter corresponds to the name of the state.
-    - String
-  * - conf
-    - This parameter contains the configurations of each quarter for the execution of cpt.
-    - Array
-  * - conf_pycpt
-    - This parameter corresponds to the configuration for seasonal forecast using pypct.
-    - Array
-  * - track
-    - This object contains the registration data, if it is active within the system, date of registration in the system and date of updates.
-    - Object
 
 
-.. note::
-
-
-    To know more about the parameters inside the **quarter**: :ref:`Quarter`
+  * - measure
+    - Variable's name
+    - MeasureClimatic
+  * - lower
+    - Probability that is below normal
+    - Double
+  * - normal
+    - Probability that is normal
+    - Double
+  * - upper
+    - Normal probability that is above
+    - Double
 
 
 
-.. image:: /_static/img/03-database-helper/lc_state_model.*
-    :alt: Model of the collection lc_state
+.. image:: /_static/img/03-database-helper/probability_model.*
+    :alt: Model of the collection probability_model
     :class: device-screen-vertical side-by-side
 
 
-lc_weather_station
+
+performance_metric
 ==================
 
-This collection contains all weather stations of the system, This collection contains the following parameters:
+This entity represents an indicator of behavior prediction models, This collection contains the following parameters:
 
 .. list-table:: Data base collection
   :widths: 25 25 25
@@ -349,45 +146,717 @@ This collection contains all weather stations of the system, This collection con
   * - Parameter
     - Definition
     - Type
-  
-  * - _id
-    - Unique identifier
-    - ObjectId
+
+
+  * - year
+    - Year forecast
+    - Integer
+  * - month
+    - Month forecast
+    - Integer
   * - name
-    - This parameter corresponds to the name of the weather station.
+    - Metric name
+    - MeasurePerformance
+  * - value
+    - Metric value
+    - Double
+
+
+
+.. image:: /_static/img/03-database-helper/performance_metric_model.*
+    :alt: Model of the collection performance_metric_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+probability_climate
+===================
+
+This entity represents the probabilities of the variables of values of the prediction of every weather station, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - year
+    - Year forecast
+    - Integer
+  * - month
+    - Month forecast
+    - Integer
+  * - probabilities
+    - List of variables forecast for the month
+    - Array of Probability
+
+
+
+.. image:: /_static/img/03-database-helper/probability_climate_model.*
+    :alt: Model of the collection probability_climate_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+probability_subseasonal
+=======================
+
+This entity represents the probabilities of the variables of values of the prediction of every weather station, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - year
+    - Year forecast
+    - Integer
+  * - month
+    - Month forecast
+    - Integer
+  * - week
+    - Week forecast
+    - Integer
+  * - probabilities
+    - List of variables forecast for the month
+    - Array of Probability
+
+
+
+.. image:: /_static/img/03-database-helper/probability_subseasonal_model.*
+    :alt: Model of the collection probability_subseasonal_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+threshold
+=========
+
+This entity represents the threshold of the soil or the cultivar, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - label
+    - Label of the threshold
     - String
-  * - ext_id
-    - This parameter corresponds to the Id of the data source (external id)
+  * - value
+    - percentage of the soil
+    - Double
+
+
+
+.. image:: /_static/img/03-database-helper/threshold_model.*
+    :alt: Model of the collection threshold_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+crop_config
+===========
+
+This entity represents the crop config with the limit and upper of the variable, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - label
+    - Label for the range
     - String
-  * - country
-    - This parameter corresponds to the Id of the municipality to which the weather station belongs.
+  * - min
+    - Lower limit
+    - Double
+  * - max
+    - Upper limit
+    - Double
+  * - type
+    - percentage of the soil
+    - String
+
+
+
+.. image:: /_static/img/03-database-helper/crop_config_model.*
+    :alt: Model of the collection crop_config_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+climate_configuration
+=====================
+
+This entity represents the cpt configurations by state taken into account at the time of the climatic forecast, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - state
+    - ID's state
     - ObjectId
-  * - origin
-    - This parameter corresponds to the name of entity owns this weather station.
-    - String
-  * - latitude
-    - This parameter corresponds to the decimal latitude of the location of the weather station.
-    - Double
-  * - longitude
-    - This parameter corresponds to the decimal longitude of the location of the weather station.
-    - Double
-  * - elevation
-    - This parameter corresponds to the elevation of the weather station.
-    - Double
-  * - conf_files
-    - This parameter contains each of the files that this configuration contains, with the name, the path from which the file should be copied, and the date of registration.
-    - Array
-  * - visible
-    - This parameter allows you to activate or deactivate the weather station within the different AClimate pages and also in the forecast process.
+  * - conf
+    - Contains the configurations of each quarter for the execution of cpt
+    - Array of the ConfigurationCPT
+
+
+
+
+.. image:: /_static/img/03-database-helper/climate_configuration_model.*
+    :alt: Model of the collection climate_configuration_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+track
+=====
+
+This entity represents the history that an entity has had, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - enable
+    - It indicates whether the entity is active or not. True is active, it is not false
     - Bool
-  * - ranges
-    - This parameter contains array of yield ranges of the crops for the weather station. It contains the parameters of the crop to which it belongs, the name of the range and the upper and lower.
-    - Array
+  * - register
+    - Date on which was register the entity to the database
+    - Date
+  * - updated
+    - Date on which the last update of the entity was carried out in the database
+    - Date
+
+
+
+
+.. image:: /_static/img/03-database-helper/track_model.*
+    :alt: Model of the collection track_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+
+monthly_data_station
+====================
+
+This entity represents the monthly climatological data from a weather station, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - month
+    - Month of the year
+    - Integer
+  * - data
+    - Climatic data
+    - Array of ClimaticData
+
+
+
+
+.. image:: /_static/img/03-database-helper/monthly_data_station_model.*
+    :alt: Model of the collection monthly_data_station_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+climatic_data
+=============
+
+This entity represents climatic data, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - measure
+    - Variable's name
+    - MeasureClimatic
+  * - value
+    - Variable's value
+    - Double
+
+
+
+
+.. image:: /_static/img/03-database-helper/climatic_data_model.*
+    :alt: Model of the collection climatic_data_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+
+climatic_data
+=============
+
+This entity represents climatic data, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - measure
+    - Variable's name
+    - MeasureClimatic
+  * - value
+    - Variable's value
+    - Double
+
+
+
+
+.. image:: /_static/img/03-database-helper/climatic_data_model.*
+    :alt: Model of the collection climatic_data_model
+    :class: device-screen-vertical side-by-side
+
+
+
+log
+===
+
+This entity has the activities record over platform, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - date
+    - Date event
+    - Date
+  * - user
+    - User that executed the event
+    - String
+  * - type_event
+    - Event's name
+    - LogEvent
+  * - entities
+    - List of entities affected in the event
+    - Array of LogEntity
+  * - content
+    - Description's event
+    - String
+
+
+
+
+.. image:: /_static/img/03-database-helper/log_model.*
+    :alt: Model of the collection log_model
+    :class: device-screen-vertical side-by-side
+
+
+
+yield_range
+===========
+
+This entity represents the yield ranges of the crops in the weather station, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - crop
+    - ID's crop
+    - ObjectId
+  * - label
+    - Label of the range
+    - String
+  * - lower
+    - Lower limit
+    - Double
+  * - upper
+    - Upper limit
+    - Double
+
+
+
+
+.. image:: /_static/img/03-database-helper/yield_range_model.*
+    :alt: Model of the collection yield_range_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+configuration_file
+==================
+
+This entity has the information about configurations files, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - name
+    - Configuration's name
+    - String
+  * - path
+    - Absolut path where the configuration file is located
+    - String
+  * - date
+    - Date of file creation in the system
+    - Date
+
+
+
+.. image:: /_static/img/03-database-helper/configuration_file_model.*
+    :alt: Model of the collection configuration_file_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+season
+======
+
+This entity represents the ranges of the planting window is active, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - start
+    - Month when planting window start
+    - String
+  * - end
+    - Month when planting window finish
+    - String
+  * - sowing_days
+    - Sowing days it's a env equal to 45
+    - Date
+
+
+
+.. image:: /_static/img/03-database-helper/season_model.*
+    :alt: Model of the collection season_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+configuration_cpt
+=================
+
+This entity represents the configuration that must be made at the time of generation of climate forecasts with cpt, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - trimester
+    - Sets the quarter for which the forecast is made
+    - Quarter
+  * - regions
+    - List of theoretical regions
+    - Array of Region
+  * - x_mode
+    - Number of modes in x
+    - Integer
+  * - y_mode
+    - Number of modes in y
+    - Integer
+  * - cca_mode
+    - Number of modes in canonical correlation
+    - Integer
+  * - gamma
+    - Sets if the gamma transformation is used
+    - Bool
   * - track
-    - This object contains the registration data, if it is active within the system, date of registration in the system and date of updates.
-    - Object
+    - Shows the trace of the changes that occurred in the entity
+    - Track
 
 
-.. image:: /_static/img/03-database-helper/lc_weather_station_model.*
-    :alt: Model of the collection lc_weather_station
+.. image:: /_static/img/03-database-helper/configuration_cpt_model.*
+    :alt: Model of the collection configuration_cpt_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+configuration_cpt
+=================
+
+This entity represents the configuration that must be made at the time of generation of climate forecasts with cpt, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - trimester
+    - Sets the quarter for which the forecast is made
+    - Quarter
+  * - regions
+    - List of theoretical regions
+    - Array of Region
+  * - x_mode
+    - Number of modes in x
+    - Integer
+  * - y_mode
+    - Number of modes in y
+    - Integer
+  * - cca_mode
+    - Number of modes in canonical correlation
+    - Integer
+  * - gamma
+    - Sets if the gamma transformation is used
+    - Bool
+  * - track
+    - Shows the trace of the changes that occurred in the entity
+    - Track
+
+
+.. image:: /_static/img/03-database-helper/configuration_cpt_model.*
+    :alt: Model of the collection configuration_cpt_model
+    :class: device-screen-vertical side-by-side
+
+
+
+region
+======
+
+This entity represents geographic regions in rectangular form, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - left_lower
+    - Coordinates of the lower left corner of the theoretical area
+    - Coords
+  * - rigth_upper
+    - Coordinates of the upper rigth corner of the theoretical area
+    - Coords
+
+
+
+.. image:: /_static/img/03-database-helper/region_model.*
+    :alt: Model of the collection region_model
+    :class: device-screen-vertical side-by-side
+
+
+
+coords
+======
+
+This entity represents the geographic coordinates, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - lat
+    - Decimal latitude of the location
+    - Double
+  * - lon
+    - Decimal longitude of the location
+    - Double
+
+
+
+.. image:: /_static/img/03-database-helper/coords_model.*
+    :alt: Model of the collection coords_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+configuration_pycpt
+===================
+
+This entity represents the configuration that must be made at the time of generation of climate forecasts with pycpt, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - spatial_predictors
+    - Define the spatial region for predictors
+    - Region
+  * - spatial_predictands
+    - Define the spatial region for predictands
+    - Region
+  * - models
+    - List of models that will include in the forecast process
+    - ModelsPyCpt
+  * - obs
+    - Type of observational data
+    - Obs
+  * - station
+    - Define whether station
+    - Bool
+  * - mos
+    - Define type of Mos
+    - Mos
+  * - predictand
+    - Define the predictand
+    - Predictand
+  * - predictors
+    - Define the predictors
+    - Predictors
+  * - month
+    - Define the month of the year
+    - Integer
+  * - ranges_years
+    - Define the ranges years
+    - RangeParameter
+  * - xmodes
+    - Number of modes in x
+    - RangeParameter
+  * - ymodes
+    - Number of modes in y
+    - RangeParameter
+  * - ccamodes
+    - Number of modes in canonical correlation
+    - RangeParameter
+  * - force_download
+    - Define whether force download
+    - Bool
+  * - single_models
+    - Define whether single models
+    - Bool
+  * - forecast_anomaly
+    - DDefine whether the forecast anomaly
+    - Bool
+  * - forecast_spi
+    - Define whether the forecast spi
+    - Bool
+  * - confidence_level
+    - Define the level of the confidence
+    - Double
+  * - track
+    - Shows the trace of the changes that occurred in the entity
+    - Track
+
+
+
+.. image:: /_static/img/03-database-helper/configuration_pycpt_model.*
+    :alt: Model of the collection configuration_pycpt_model
+    :class: device-screen-vertical side-by-side
+
+
+
+
+
+range_parameter
+===============
+
+This entity represents the ranges of the configs, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - min
+    - Min value
+    - Integer
+  * - max
+    - Max value
+    - Integer
+
+
+
+.. image:: /_static/img/03-database-helper/range_parameter_model.*
+    :alt: Model of the collection range_parameter_model
     :class: device-screen-vertical side-by-side
