@@ -16,3 +16,10 @@ The collections are divided into different categories:
 * **ad:** Collections related to system administration, contain user data, roles, etc.
 
 * **log:** Collections with system event log data, errors etc.
+
+
+
+
+.. image:: /_static/img/03-database/principal_model.*
+    :alt: Model of the collection principal_model
+    :class: device-screen-vertical side-by-side
