@@ -1,3 +1,6 @@
+.. _Forecast information endpoints:
+
+
 Forecast
 ########
 

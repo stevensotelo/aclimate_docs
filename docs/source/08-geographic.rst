@@ -1,6 +1,7 @@
 Geographic
 ##########
 
+.. _Geographic Country:
 
 Country
 =======
@@ -49,7 +50,7 @@ CSV format example:
     :class: device-screen-vertical side-by-side
 
 
-
+.. _Geographic IdCountry:
 
 countryId
 =========

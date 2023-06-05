@@ -1,3 +1,5 @@
+.. _Recommendation endpoints:
+
 Recommendation
 ##############
 
