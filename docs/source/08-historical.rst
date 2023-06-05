@@ -1,3 +1,5 @@
+.. _Historical information endpoints:
+
 Historical
 ##########
 
