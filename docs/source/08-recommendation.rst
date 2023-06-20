@@ -26,25 +26,63 @@ To make use of this endpoint you must follow the following steps:
 
     - **weather_stations**: You must enter the id of the weather station from which you want to get the information, if you want to obtain recommendations for different stations, you must separate each Id by ",".
 
-    - **format:** The format in which you want to obtain the information. 
+    - **format:** to learn more about format parameter click here :ref:`format`.
 
-
-There are two options for the **format** parameter. 
-
- 
-
-    - JSON: It will deliver the information in JSON format. 
-
-    - csv: It will deliver the information in a plain text file separated by "," (csv). 
-
- 
 
 The endpoint must follow the following format **https://webapi.aclimate.org/api/Recommendation/RecommendationYield/(weather_stations)/(format)** 
 
 Examples: 
 
-    - https://webapi.aclimate.org/api/Recommendation/RecommendationYield/5a7e22af57d7f316c8bc4ac6/json 
-    - https://webapi.aclimate.org/api/Recommendation/RecommendationYield/5a7e22af57d7f316c8bc4ac6/csv 
+    - https://webapi.aclimate.org/api/Recommendation/RecommendationYield/5a7e22af57d7f316c8bc4ac6/eng/json 
+    - https://webapi.aclimate.org/api/Recommendation/RecommendationYield/5a7e22af57d7f316c8bc4ac6/eng/csv 
+
+
+
+.. _Recommendation key parameters:
+
+.. list-table:: Recommendation key parameters
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **tag**
+    - key identifier.
+    - String
+  * - **id**
+    - key identifier id.
+    - ObjectId
+  * - **value**
+    - Id identifier value.
+    - String
+
+
+
+.. list-table:: Recommendation parameters
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **ws_id**
+    - This parameter indicates the ID of the weather station to which the recommendation belongs.
+    - ObjectId
+  * - **ws_name**
+    - This parameter indicates the name of the weather station to which the recommendation belongs.
+    - Double
+  * - **type**
+    - Indicates the type of recommendation to be displayed.
+    - String
+  * - **keys**
+    - To learn more click here :ref:`Recommendation key parameters`.
+    - Array of keys
+  * - **content**
+    - Corresponds to the recommendation that is being provided.
+    - String
 
 
 

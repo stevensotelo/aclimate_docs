@@ -12,6 +12,23 @@ The base Endpoint is built as follows:
     - Example: https://webapi.aclimate.org/api/Forecast/Historical/2018/json
 
 
+.. _format:
+
+format
+******
+
+All API endpoints have the **format** parameter which has the following format:
+
+There are two options for the **format** parameter. 
+
+ 
+
+    - JSON: It will deliver the information in JSON format. 
+
+    - csv: It will deliver the information in a plain text file separated by "," (csv). 
+
+
+
 If you want to try the AClimate API you can enter the following link where you will have access to all the API methods: https://webapi.aclimate.org/swagger/index.html
 
 
