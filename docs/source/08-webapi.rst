@@ -7,7 +7,7 @@ Through the AClimate API you can obtain historical information, information obta
 
 The base Endpoint is built as follows:
 
-    - **base_URL + /api + /(controller)/(specific module)/(parameters)**
+    - **base_URL + /api + /{controller}/{specific module}/{parameters}**
 
     - Example: https://webapi.aclimate.org/api/Forecast/Historical/2018/json
 

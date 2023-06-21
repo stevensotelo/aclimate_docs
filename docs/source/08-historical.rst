@@ -22,7 +22,7 @@ To make use of this endpoint you must follow the following steps:
 
 
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Historical/Climatology/(weather_stations)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Historical/Climatology/{weather_stations}/{format}** 
 
 Examples: 
 
@@ -83,7 +83,7 @@ To make use of this endpoint you must follow the following steps:
 
 
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Historical/HistoricalClimatic/(weather_stations)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Historical/HistoricalClimatic/{weather_stations}/{format}** 
 
 Examples: 
 
@@ -145,7 +145,7 @@ To make use of this endpoint you must follow the following steps:
 
  
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Historical/HistoricalYieldYears/(weather_stations)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Historical/HistoricalYieldYears/{weather_stations}/{format}** 
 
 Examples: 
 
@@ -205,7 +205,7 @@ To make use of this endpoint you must follow the following steps:
  
 
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Historical/HistoricalYield/(weather_stations)/(years)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Historical/HistoricalYield/{weather_stations}/{years}/{format}** 
 
 Examples: 
 

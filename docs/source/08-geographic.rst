@@ -82,7 +82,7 @@ To make use of this endpoint you must follow the following steps:
 
 
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Geographic/(countryId)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Geographic/{countryId}/{format}** 
 
 Examples: 
 
@@ -228,7 +228,7 @@ To make use of this endpoint you must follow the following steps:
 
  
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Geographic/Crop/(countryId)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Geographic/Crop/{countryId}/{format}** 
 
 Examples: 
 

@@ -25,7 +25,7 @@ To make use of this endpoint you must follow the following steps:
 
  
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/Climate/(weather_stations)/(probabilities)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/Climate/{weather_stations}/{probabilities}/{format}** 
 
 Examples: 
 
@@ -207,7 +207,7 @@ To make use of this endpoint you must follow the following steps:
 
  
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/Yield/(weather_stations)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/Yield/{weather_stations}/{format}** 
 
 Examples: 
 
@@ -313,7 +313,7 @@ To make use of this endpoint you must follow the following steps:
 
  
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/YieldExceedance/(weather_stations)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/YieldExceedance/{weather_stations}/{format}** 
 
 Examples: 
 
@@ -376,7 +376,7 @@ To make use of this endpoint you must follow the following steps:
 
  
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/SubseasonalWS/(weather_stations)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/SubseasonalWS/{weather_stations}/{format}** 
 
 Examples: 
 
@@ -438,7 +438,7 @@ To make use of this endpoint you must follow the following steps:
 
  
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/Log/(year)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/Log/{year}/{format}** 
 
 Examples: 
 
@@ -507,7 +507,7 @@ To make use of this endpoint you must follow the following steps:
 
  
 
-The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/YieldPrevious/(forecast)/(weather_stations)/(format)** 
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/YieldPrevious/{forecast}/{weather_stations}/{format}** 
 
 Examples: 
 
