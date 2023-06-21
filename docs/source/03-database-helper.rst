@@ -2,6 +2,8 @@ Helpers structures
 ##################
 
 
+.. _yield_data:
+
 yield_data
 ==========
 
@@ -65,7 +67,8 @@ This entity represents the data of crop yield for different variables, This coll
     :alt: Model of the collection yield_data_model
     :class: device-screen-vertical side-by-side
 
-  
+
+
 
 yield_crop
 ==========
@@ -98,6 +101,8 @@ This entity represents the yield of a cultivar, a soil for a weather station, Th
     :alt: Model of the collection yield_crop_model
     :class: device-screen-vertical side-by-side
 
+
+.. _probability:
 
 probability
 ===========
