@@ -1,2 +1,9 @@
-Architecture - Level C3
-=======================
+Level 3: Component
+==================
+
+Component Diagrams dive deeper into each container identified in the previous level. 
+They depict the internal components and their interactions within a specific container. 
+Components represent the key building blocks or modules within a container, such as classes, 
+modules, or services. These diagrams provide a more detailed view of the internal structure 
+of each container and help stakeholders understand how the components collaborate to fulfill 
+the system's functionality.

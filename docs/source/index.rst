@@ -3,14 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Aclimate Platform
+AClimate Platform
 =================
-:dfn:`Aclimate` is a platform for agro-climatic forecasts that supports
+:dfn:`AClimate` is a platform for agro-climatic forecasts that supports
 the decision-making of farmers and technical assistants. It formalizes the
 processing of climate and crop information from quality control, forecasting,
 and tailoring to crop-specific decision-making processes.
 
-The official website of `Aclimate <https://www.aclimate.org/>`_.
+The official website of `AClimate <https://www.aclimate.org/>`_.
 
 .. image:: /_static/img/index/logo.*
   :alt: The Alliance Bioversity Internacional - CIAT

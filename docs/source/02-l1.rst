@@ -1,2 +1,18 @@
-Architecture - Level C1
+Level 1: System Context
 =======================
+
+At the highest level, the System Context Diagram depicts the system as a 
+single box surrounded by its external entities, such as users, systems, and external dependencies. 
+This diagram provides a broad view of the system and its interactions with the outside world. 
+It helps stakeholders understand how the system fits into its larger environment, 
+the external actors it interacts with, and the boundaries of the system.
+
+The AClimate platform serves as a comprehensive solution to support decision making process, 
+catering to the needs of researchers, decision-makers, farmers, and extension agents. 
+Researchers are people who analyze and configure data into the system, while decision-makers rely on its insights to 
+make informed choices. Farmers benefit from information and recommendations for agricultural practices, 
+and extension agents facilitate effective communication and support. 
+
+.. image:: /_static/img/02-l1/level1.*
+    :alt: Architecture Level 1 - System Context AClimate
+    :class: device-screen-vertical side-by-side

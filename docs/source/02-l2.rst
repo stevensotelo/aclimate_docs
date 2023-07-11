@@ -1,2 +1,9 @@
-Architecture - Level C2
-=======================
+Level 2: Container
+==================
+
+Container Diagrams focus on the major software systems within the system boundary identified 
+in the System Context Diagram. Containers represent executable software applications, 
+such as web applications, mobile apps, or databases, that reside within the system. 
+This level provides an overview of the different types of containers, their responsibilities, 
+and the relationships between them. Container Diagrams help stakeholders understand 
+the high-level structure of the system and the key components that make up the architecture.
