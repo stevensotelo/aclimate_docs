@@ -20,11 +20,3 @@ The four level contains too much detailed that is out of our goal in this docume
 By this reason we won't reach that level.
 
 * Brown, S. (2018). The C4 Model for Software Architecture. InfoQ. `https://www.infoq.com/articles/C4-architecture-model/ <https://www.infoq.com/articles/C4-architecture-model/>`_
-
-.. toctree::
-  :hidden:
-  :maxdepth: 1
-
-  02-l1
-  02-l2
-  02-l3

@@ -30,6 +30,9 @@ The official website of `AClimate <https://www.aclimate.org/>`_.
   :caption: Architecture
 
   02-architecture
+  02-l1
+  02-l2
+  02-l3
 
 .. toctree::
   :hidden:

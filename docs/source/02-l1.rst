@@ -7,11 +7,32 @@ This diagram provides a broad view of the system and its interactions with the o
 It helps stakeholders understand how the system fits into its larger environment, 
 the external actors it interacts with, and the boundaries of the system.
 
-The AClimate platform serves as a comprehensive solution to support decision making process, 
+The platform serves as a comprehensive solution to support decision making process, 
 catering to the needs of researchers, decision-makers, farmers, and extension agents. 
 Researchers are people who analyze and configure data into the system, while decision-makers rely on its insights to 
 make informed choices. Farmers benefit from information and recommendations for agricultural practices, 
 and extension agents facilitate effective communication and support. 
+
+AClimate system serves as a vital component, providing valuable insights and predictions. 
+This system acts as a central hub that generates forecasts directly into the platform. 
+It establishes connections to obtain relevant data from diverse sources, ensuring the 
+availability of accurate and up-to-date information. Leveraging additional applications and tools, 
+the system employs advanced algorithms and models to generate forecasts specific to agroclimatic conditions. 
+Furthermore, it incorporates crop simulation techniques to simulate the growth and development of 
+crops under different climatic scenarios. By integrating these capabilities.
+
+Melisa Chatbot is an innovative chatbot system designed to provide agroclimatic information using 
+Natural Language Processing (NLP) techniques across various social media and messaging platforms. 
+As a cutting-edge AI-powered chatbot, Melisa utilizes advanced language understanding algorithms 
+to interpret user queries related to agroclimatic conditions and provide timely and accurate responses. 
+By leveraging NLP capabilities, Melisa can analyze and understand the intent and context of user messages, 
+ensuring personalized and contextually relevant information is delivered. 
+This chatbot system acts as a virtual assistant for farmers, researchers, and other stakeholders, 
+offering on-demand access to agroclimatic data, forecasts, and recommendations. 
+Melisa is not part of this documentation, you can find more information in 
+`Melisa news <https://alliancebioversityciat.org/tools-innovations/melisa-chatbot>`_
+
+The next figure presents the architecture at level 1:
 
 .. image:: /_static/img/02-l1/level1.*
     :alt: Architecture Level 1 - System Context AClimate
