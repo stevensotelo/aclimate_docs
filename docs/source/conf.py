@@ -16,6 +16,7 @@ release = '2'
 
 extensions = [
     'sphinx_rtd_theme',
+    'sphinx.ext.autosectionlabel'
 ]
 
 templates_path = ['_templates']

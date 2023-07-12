@@ -1,5 +1,5 @@
-Level 2: Container
-==================
+Level 2: Containers
+===================
 
 Container Diagrams focus on the major software systems within the system boundary identified 
 in the System Context Diagram. Containers represent executable software applications, 
@@ -7,3 +7,74 @@ such as web applications, mobile apps, or databases, that reside within the syst
 This level provides an overview of the different types of containers, their responsibilities, 
 and the relationships between them. Container Diagrams help stakeholders understand 
 the high-level structure of the system and the key components that make up the architecture.
+
+L2: Forecast DB
+---------------
+The Forecast DB database serves as a robust repository for storing and managing all the information 
+required for the entire platform. It acts as a foundational element that consolidates data from various process, 
+including parameters, geographical configuration, forecast results, crop simulations, and other relevant datasets. 
+This comprehensive database ensures the integrity, accessibility, and scalability of the platform's information. 
+It enables efficient data retrieval, analysis, and processing, supporting the generation of accurate forecasts, 
+personalized recommendations, and meaningful insights. With its robust architecture and optimized data 
+management capabilities, the central database plays a pivotal role in facilitating seamless interactions across 
+different components of the platform and empowering users with valuable and up-to-date 
+agroclimatic information.
+
+L2: Geoserver
+-------------
+The Geoserver component serves as a pivotal element within the platform, specifically dedicated to storing and 
+managing spatial information. This component acts as a repository for various spatial data sets, 
+including spatial climate forecasts and historical indicators. By leveraging Geoserver, the platform can efficiently 
+organize, store, and retrieve geospatial data, ensuring accessibility and accuracy for users. 
+The Geoserver component enables the integration of geospatial data into the platform's functionalities, 
+allowing for the visualization, analysis, and manipulation of spatial information. You can find
+more information about how the data is organized in :ref:`Spatial data` section.
+
+L2: Web Admin
+-------------
+The Web Admin website serves as a central hub for managing and configuring the entire platform, 
+focusing on essential administrative processes and parameter settings for the climate forecast model 
+and crop simulation. This website provides an intuitive and user-friendly interface that enables 
+administrators (researchers) to efficiently configure various aspects of the platform according to their specific needs. 
+Through the website, administrators can define and adjust parameters for the seasonal and subseasonal climate 
+forecast model, ensuring accurate and reliable predictions. Additionally, they can fine-tune settings for crop simulation, 
+allowing for customized simulations tailored to specific regions, cultivars, and soils. 
+
+L2: Forecast process
+--------------------
+The Forecast Process component, implemented as a script, plays a pivotal role in the platform's forecasting capabilities. 
+Executed on a monthly basis, this component automates the forecast process by extracting relevant information 
+from the database and web admin. Leveraging climate and crop models, it generates accurate and timely forecasts. 
+The script accesses the necessary data from the database, including historical climate data, crop parameters, and 
+configuration settings. By executing the forecast process, it utilizes the climate and crop models to simulate and 
+predict future agroclimatic conditions. Once the forecast process is complete, the component saves the generated 
+forecast data back into the database, ensuring it is readily available for users. 
+
+L2: Web API
+-----------
+The Web API component plays a vital role in the platform by exposing data to external applications. This powerful 
+component enables the extraction of essential information from the system, including geographical configuration, 
+historical data, and forecast data for both climate and crop-related information. By offering a standardized and 
+interoperable interface, the Web API facilitates seamless integration with third-party applications. It empowers 
+developers and stakeholders to extract data programmatically, enabling the creation of innovative tools, services, 
+and solutions that leverage the platform's rich dataset. This interoperable system fosters collaboration, 
+encourages data-driven decision-making, and expands the platform's reach by allowing external applications to 
+access and utilize the valuable agroclimatic information it provides. You can find more information about how 
+the Enpoints are organized in :ref:`Web API` section.
+
+L2: Web
+-------
+The Web component serves as a user-friendly frontend interface tailored for the final users (farmers, extension agents,
+policy makers, and others) of the platform. Designed with a focus on usability and accessibility, 
+this component provides a seamless browsing experience. Users can access the website to explore a wealth of historical 
+and forecast information presented in various formats. The website offers intuitive navigation and search functionalities, 
+allowing users to easily find the specific data they need. Moreover, the website caters to users in different countries, 
+providing country-specific information and localized features. With its visually appealing and user-centric design, 
+the Website component ensures that users can effortlessly access and interpret historical and forecast data, 
+empowering them to make informed decisions and derive valuable insights related to agroclimatic conditions.
+
+The next figure presents the architecture at level 2:
+
+.. image:: /_static/img/02-l2/level2.*
+    :alt: Architecture Level 2 - Containers
+    :class: device-screen-vertical side-by-side
