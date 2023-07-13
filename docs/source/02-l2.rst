@@ -8,6 +8,12 @@ This level provides an overview of the different types of containers, their resp
 and the relationships between them. Container Diagrams help stakeholders understand 
 the high-level structure of the system and the key components that make up the architecture.
 
+The next figure presents the architecture at level 2:
+
+.. image:: /_static/img/02-l2/level2.*
+    :alt: Architecture Level 2 - Containers
+    :class: device-screen-vertical side-by-side
+
 L2: Forecast DB
 ---------------
 The Forecast DB database serves as a robust repository for storing and managing all the information 
@@ -72,9 +78,3 @@ allowing users to easily find the specific data they need. Moreover, the website
 providing country-specific information and localized features. With its visually appealing and user-centric design, 
 the Website component ensures that users can effortlessly access and interpret historical and forecast data, 
 empowering them to make informed decisions and derive valuable insights related to agroclimatic conditions.
-
-The next figure presents the architecture at level 2:
-
-.. image:: /_static/img/02-l2/level2.*
-    :alt: Architecture Level 2 - Containers
-    :class: device-screen-vertical side-by-side

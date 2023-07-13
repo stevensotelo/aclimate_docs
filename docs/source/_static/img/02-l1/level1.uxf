@@ -86,7 +86,7 @@ Makers</panel_attributes>
     </coordinates>
     <panel_attributes>symbol=component
 &lt;&lt;data&gt;&gt;
-CHIRPS
+SST
 bg=gray</panel_attributes>
     <additional_attributes/>
   </element>

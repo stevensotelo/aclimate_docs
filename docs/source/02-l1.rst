@@ -7,6 +7,12 @@ This diagram provides a broad view of the system and its interactions with the o
 It helps stakeholders understand how the system fits into its larger environment, 
 the external actors it interacts with, and the boundaries of the system.
 
+The next figure shows the architecture at level 1:
+
+.. image:: /_static/img/02-l1/level1.*
+    :alt: Architecture Level 1 - System Context AClimate
+    :class: device-screen-vertical side-by-side
+
 L1: Users
 ---------
 The platform serves as a comprehensive solution to support decision making process, 
@@ -37,9 +43,3 @@ This chatbot system acts as a virtual assistant for farmers, researchers, and ot
 offering on-demand access to agroclimatic data, forecasts, and recommendations. 
 Melisa is not part of this documentation, you can find more information in 
 `Melisa news <https://alliancebioversityciat.org/tools-innovations/melisa-chatbot>`_
-
-The next figure presents the architecture at level 1:
-
-.. image:: /_static/img/02-l1/level1.*
-    :alt: Architecture Level 1 - System Context AClimate
-    :class: device-screen-vertical side-by-side

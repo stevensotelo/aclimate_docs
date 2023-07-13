@@ -48,15 +48,15 @@ Makers</panel_attributes>
     </coordinates>
     <panel_attributes>symbol=component
 &lt;&lt;data&gt;&gt;
-CHIRPS
+SST
 bg=gray</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>490</x>
-      <y>720</y>
+      <x>700</x>
+      <y>770</y>
       <w>200</w>
       <h>60</h>
     </coordinates>
@@ -70,7 +70,7 @@ bg=gray</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>490</x>
-      <y>790</y>
+      <y>770</y>
       <w>200</w>
       <h>60</h>
     </coordinates>
@@ -84,7 +84,7 @@ bg=gray</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>260</x>
-      <y>720</y>
+      <y>790</y>
       <w>200</w>
       <h>60</h>
     </coordinates>
@@ -98,7 +98,7 @@ bg=gray</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>260</x>
-      <y>790</y>
+      <y>860</y>
       <w>200</w>
       <h>60</h>
     </coordinates>
@@ -127,8 +127,8 @@ bg=gray</panel_attributes>
     <coordinates>
       <x>420</x>
       <y>380</y>
-      <w>780</w>
-      <h>270</h>
+      <w>760</w>
+      <h>340</h>
     </coordinates>
     <panel_attributes>lt=.
 AClimate Platform</panel_attributes>
@@ -139,48 +139,48 @@ AClimate Platform</panel_attributes>
     <coordinates>
       <x>210</x>
       <y>600</y>
-      <w>340</w>
-      <h>240</h>
+      <w>270</w>
+      <h>310</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;uses&gt;&gt;</panel_attributes>
-    <additional_attributes>320.0;10.0;320.0;90.0;10.0;90.0;10.0;220.0;50.0;220.0</additional_attributes>
+    <additional_attributes>250.0;10.0;250.0;90.0;10.0;90.0;10.0;290.0;50.0;290.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
+      <x>360</x>
       <y>600</y>
-      <w>340</w>
-      <h>170</h>
+      <w>190</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;uses&gt;&gt;</panel_attributes>
-    <additional_attributes>320.0;10.0;320.0;90.0;10.0;90.0;10.0;150.0;50.0;150.0</additional_attributes>
+    <additional_attributes>170.0;10.0;170.0;140.0;10.0;140.0;10.0;190.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
+      <x>570</x>
       <y>600</y>
-      <w>230</w>
-      <h>240</h>
+      <w>70</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;uses&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0;210.0;90.0;210.0;220.0;170.0;220.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>600</y>
-      <w>230</w>
-      <h>170</h>
+      <x>790</x>
+      <y>690</y>
+      <w>70</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;uses&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0;210.0;90.0;210.0;150.0;170.0;150.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -198,13 +198,13 @@ AClimate Platform</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>340</x>
-      <y>480</y>
-      <w>150</w>
-      <h>120</h>
+      <y>500</y>
+      <w>180</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;gets&gt;&gt;</panel_attributes>
-    <additional_attributes>100.0;100.0;90.0;100.0;90.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>120.0;50.0;120.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -458,5 +458,31 @@ bg=orange</panel_attributes>
     <panel_attributes>Database
 bg=red</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>700</x>
+      <y>640</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+&lt;&lt;web api&gt;&gt;
+Web API Oyrza
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>600</y>
+      <w>100</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;gets&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0;80.0;80.0</additional_attributes>
   </element>
 </diagram>

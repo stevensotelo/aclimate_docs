@@ -7,3 +7,9 @@ Components represent the key building blocks or modules within a container, such
 modules, or services. These diagrams provide a more detailed view of the internal structure 
 of each container and help stakeholders understand how the components collaborate to fulfill 
 the system's functionality.
+
+The next figure presents the architecture at level 3:
+
+.. image:: /_static/img/02-l3/level3.*
+    :alt: Architecture Level 3 - Components
+    :class: device-screen-vertical side-by-side
