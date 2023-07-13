@@ -24,7 +24,7 @@ It enables efficient data retrieval, analysis, and processing, supporting the ge
 personalized recommendations, and meaningful insights. With its robust architecture and optimized data 
 management capabilities, the central database plays a pivotal role in facilitating seamless interactions across 
 different components of the platform and empowering users with valuable and up-to-date 
-agroclimatic information.
+agroclimatic information. You can find more information about how the data is organized in :ref:`Database` section.
 
 L2: Geoserver
 -------------
@@ -54,7 +54,8 @@ from the database and web admin. Leveraging climate and crop models, it generate
 The script accesses the necessary data from the database, including historical climate data, crop parameters, and 
 configuration settings. By executing the forecast process, it utilizes the climate and crop models to simulate and 
 predict future agroclimatic conditions. Once the forecast process is complete, the component saves the generated 
-forecast data back into the database, ensuring it is readily available for users. 
+forecast data back into the database, ensuring it is readily available for users. You can find
+more information about how the process runs in :ref:`Forecast process` section.
 
 L2: Web API
 -----------
@@ -78,3 +79,12 @@ allowing users to easily find the specific data they need. Moreover, the website
 providing country-specific information and localized features. With its visually appealing and user-centric design, 
 the Website component ensures that users can effortlessly access and interpret historical and forecast data, 
 empowering them to make informed decisions and derive valuable insights related to agroclimatic conditions.
+
+L2: Web API Oryza
+-----------------
+The Web API component serves as a critical component within the platform, specifically designed to run the rice 
+model using Oryza in a Windows environment. This powerful component provides a standardized interface that allows 
+users to interact with the rice model and leverage its capabilities for simulating and analyzing rice cultivation. 
+By accessing the Web API, users can submit input parameters and data required by the rice model, initiate model runs, 
+and retrieve the corresponding results. The Web API component acts as a bridge between 
+forecast process and the Oryza rice model.

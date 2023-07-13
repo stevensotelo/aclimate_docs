@@ -28,7 +28,7 @@ fontsize=22
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>730</x>
+      <x>795</x>
       <y>250</y>
       <w>115</w>
       <h>50</h>
@@ -42,7 +42,7 @@ Database</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>745</x>
+      <x>810</x>
       <y>480</y>
       <w>120</w>
       <h>50</h>
@@ -56,7 +56,7 @@ ORM</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>955</x>
+      <x>1020</x>
       <y>565</y>
       <w>100</w>
       <h>50</h>
@@ -70,7 +70,7 @@ Agronomic</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>610</x>
+      <x>675</x>
       <y>590</y>
       <w>100</w>
       <h>50</h>
@@ -84,7 +84,7 @@ Master</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>285</x>
+      <x>350</x>
       <y>740</y>
       <w>135</w>
       <h>45</h>
@@ -98,7 +98,7 @@ Resampling</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>195</x>
+      <x>260</x>
       <y>190</y>
       <w>105</w>
       <h>40</h>
@@ -112,7 +112,7 @@ Crop Simulation</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>65</x>
+      <x>130</x>
       <y>315</y>
       <w>85</w>
       <h>40</h>
@@ -126,7 +126,7 @@ DSSAT</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>65</x>
+      <x>130</x>
       <y>190</y>
       <w>85</w>
       <h>40</h>
@@ -140,7 +140,7 @@ Oryza</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>165</x>
+      <x>230</x>
       <y>440</y>
       <w>85</w>
       <h>40</h>
@@ -154,7 +154,7 @@ SST</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>280</x>
+      <x>345</x>
       <y>480</y>
       <w>135</w>
       <h>50</h>
@@ -169,7 +169,7 @@ Climate forecast</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>450</x>
+      <x>515</x>
       <y>540</y>
       <w>135</w>
       <h>50</h>
@@ -184,7 +184,7 @@ Seasonal forecast</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>165</x>
+      <x>230</x>
       <y>545</y>
       <w>85</w>
       <h>40</h>
@@ -198,7 +198,7 @@ PyCPT</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>450</x>
+      <x>515</x>
       <y>630</y>
       <w>135</w>
       <h>50</h>
@@ -213,7 +213,7 @@ Subseasonal forecast</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>165</x>
+      <x>230</x>
       <y>740</y>
       <w>90</w>
       <h>45</h>
@@ -227,7 +227,7 @@ NASA Power</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>145</x>
+      <x>210</x>
       <y>330</y>
       <w>50</w>
       <h>15</h>
@@ -238,7 +238,7 @@ NASA Power</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>245</x>
+      <x>310</x>
       <y>465</y>
       <w>65</w>
       <h>25</h>
@@ -249,7 +249,7 @@ NASA Power</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>410</x>
+      <x>475</x>
       <y>560</y>
       <w>50</w>
       <h>15</h>
@@ -260,7 +260,7 @@ NASA Power</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
+      <x>315</x>
       <y>755</y>
       <w>45</w>
       <h>15</h>
@@ -271,7 +271,7 @@ NASA Power</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>415</x>
+      <x>480</x>
       <y>635</y>
       <w>240</w>
       <h>135</h>
@@ -282,7 +282,7 @@ NASA Power</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>580</x>
+      <x>645</x>
       <y>560</y>
       <w>45</w>
       <h>40</h>
@@ -293,7 +293,7 @@ NASA Power</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
+      <x>520</x>
       <y>335</y>
       <w>215</w>
       <h>265</h>
@@ -304,7 +304,7 @@ NASA Power</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
+      <x>505</x>
       <y>215</y>
       <w>250</w>
       <h>385</h>
@@ -315,7 +315,7 @@ NASA Power</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>750</x>
+      <x>815</x>
       <y>690</y>
       <w>110</w>
       <h>50</h>
@@ -329,7 +329,7 @@ Geoserver</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>410</x>
+      <x>475</x>
       <y>495</y>
       <w>245</w>
       <h>105</h>
@@ -340,7 +340,7 @@ Geoserver</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>745</x>
+      <x>810</x>
       <y>590</y>
       <w>115</w>
       <h>50</h>
@@ -354,7 +354,7 @@ ForecastApp</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>795</x>
+      <x>860</x>
       <y>525</y>
       <w>15</w>
       <h>75</h>
@@ -365,7 +365,7 @@ ForecastApp</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>845</x>
       <y>295</y>
       <w>15</w>
       <h>195</h>
@@ -376,7 +376,7 @@ ForecastApp</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>705</x>
+      <x>770</x>
       <y>610</y>
       <w>50</w>
       <h>15</h>
@@ -387,7 +387,7 @@ ForecastApp</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>685</x>
+      <x>750</x>
       <y>635</y>
       <w>15</w>
       <h>155</h>
@@ -398,7 +398,7 @@ ForecastApp</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>270</x>
+      <x>335</x>
       <y>450</y>
       <w>325</w>
       <h>145</h>
@@ -410,7 +410,7 @@ Seasonal forecast</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>955</x>
+      <x>1020</x>
       <y>265</y>
       <w>105</w>
       <h>50</h>
@@ -424,7 +424,7 @@ Sources</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>940</x>
+      <x>1005</x>
       <y>250</y>
       <w>595</w>
       <h>255</h>
@@ -436,7 +436,7 @@ WebAdmin</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>825</x>
+      <x>890</x>
       <y>340</y>
       <w>125</w>
       <h>150</h>
@@ -447,7 +447,7 @@ WebAdmin</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1070</x>
+      <x>1135</x>
       <y>565</y>
       <w>100</w>
       <h>50</h>
@@ -461,7 +461,7 @@ Forecast</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>940</x>
+      <x>1005</x>
       <y>535</y>
       <w>665</w>
       <h>105</h>
@@ -473,7 +473,7 @@ Web API</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>830</x>
+      <x>895</x>
       <y>525</y>
       <w>120</w>
       <h>50</h>
@@ -484,7 +484,7 @@ Web API</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>935</x>
+      <x>1000</x>
       <y>680</y>
       <w>580</w>
       <h>105</h>
@@ -497,7 +497,7 @@ Web</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1265</x>
+      <x>1330</x>
       <y>635</y>
       <w>15</w>
       <h>55</h>
@@ -508,7 +508,7 @@ Web</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>830</x>
+      <x>895</x>
       <y>735</y>
       <w>520</w>
       <h>85</h>
@@ -519,7 +519,7 @@ Web</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>955</x>
+      <x>1020</x>
       <y>715</y>
       <w>100</w>
       <h>50</h>
@@ -532,7 +532,7 @@ Home</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1070</x>
+      <x>1135</x>
       <y>715</y>
       <w>100</w>
       <h>50</h>
@@ -546,7 +546,7 @@ data</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>185</x>
+      <x>250</x>
       <y>165</y>
       <w>275</w>
       <h>90</h>
@@ -558,7 +558,7 @@ Oryza model</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>195</x>
+      <x>260</x>
       <y>300</y>
       <w>110</w>
       <h>40</h>
@@ -572,7 +572,7 @@ Crop Simulation</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>185</x>
+      <x>250</x>
       <y>280</y>
       <w>275</w>
       <h>130</h>
@@ -584,7 +584,7 @@ DSSAT API</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>195</x>
+      <x>260</x>
       <y>355</y>
       <w>110</w>
       <h>40</h>
@@ -598,7 +598,7 @@ Stress indices</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>320</x>
+      <x>385</x>
       <y>300</y>
       <w>120</w>
       <h>50</h>
@@ -613,7 +613,7 @@ Phenologycal indices</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>145</x>
+      <x>210</x>
       <y>205</y>
       <w>60</w>
       <h>15</h>
@@ -624,7 +624,7 @@ Phenologycal indices</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1185</x>
+      <x>1250</x>
       <y>565</y>
       <w>120</w>
       <h>50</h>
@@ -638,7 +638,7 @@ Geographic</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1320</x>
+      <x>1385</x>
       <y>565</y>
       <w>105</w>
       <h>50</h>
@@ -652,7 +652,7 @@ Historical</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1440</x>
+      <x>1505</x>
       <y>565</y>
       <w>140</w>
       <h>50</h>
@@ -666,7 +666,7 @@ Recommendations</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1180</x>
+      <x>1245</x>
       <y>715</y>
       <w>100</w>
       <h>50</h>
@@ -679,7 +679,7 @@ Crop data</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1290</x>
+      <x>1355</x>
       <y>715</y>
       <w>100</w>
       <h>50</h>
@@ -692,7 +692,7 @@ Indices</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1400</x>
+      <x>1465</x>
       <y>715</y>
       <w>100</w>
       <h>50</h>
@@ -707,7 +707,7 @@ About us
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>65</x>
+      <x>130</x>
       <y>135</y>
       <w>65</w>
       <h>20</h>
@@ -719,7 +719,7 @@ bg=gray</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>135</x>
+      <x>200</x>
       <y>135</y>
       <w>65</w>
       <h>20</h>
@@ -731,7 +731,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>205</x>
+      <x>270</x>
       <y>135</y>
       <w>65</w>
       <h>20</h>
@@ -743,7 +743,7 @@ bg=green</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>275</x>
+      <x>340</x>
       <y>135</y>
       <w>65</w>
       <h>20</h>
@@ -755,7 +755,7 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>345</x>
+      <x>410</x>
       <y>135</y>
       <w>65</w>
       <h>20</h>
@@ -767,7 +767,7 @@ bg=red</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>165</x>
+      <x>230</x>
       <y>490</y>
       <w>85</w>
       <h>40</h>
@@ -781,7 +781,7 @@ CPT</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>245</x>
+      <x>310</x>
       <y>505</y>
       <w>45</w>
       <h>15</h>
@@ -792,7 +792,7 @@ CPT</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>580</x>
+      <x>645</x>
       <y>635</y>
       <w>45</w>
       <h>35</h>
@@ -803,7 +803,7 @@ CPT</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>270</x>
+      <x>335</x>
       <y>610</y>
       <w>325</w>
       <h>85</h>
@@ -815,7 +815,7 @@ Subseasonal forecast</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>205</x>
+      <x>270</x>
       <y>580</y>
       <w>85</w>
       <h>85</h>
@@ -826,7 +826,7 @@ Subseasonal forecast</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>270</x>
+      <x>335</x>
       <y>715</y>
       <w>165</w>
       <h>85</h>
@@ -838,7 +838,7 @@ Climate scenarios</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>630</x>
+      <x>695</x>
       <y>780</y>
       <w>115</w>
       <h>50</h>
@@ -852,7 +852,7 @@ Import Geoserver</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>340</x>
+      <x>405</x>
       <y>190</y>
       <w>105</w>
       <h>40</h>
@@ -866,7 +866,7 @@ API Oryza</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>295</x>
+      <x>360</x>
       <y>205</y>
       <w>55</w>
       <h>15</h>
@@ -877,7 +877,7 @@ API Oryza</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>280</x>
+      <x>345</x>
       <y>540</y>
       <w>135</w>
       <h>50</h>
@@ -892,7 +892,7 @@ Seasonal forecast</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>280</x>
+      <x>345</x>
       <y>630</y>
       <w>135</w>
       <h>50</h>
@@ -907,7 +907,7 @@ Seasonal forecast</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>410</x>
+      <x>475</x>
       <y>650</y>
       <w>50</w>
       <h>15</h>
@@ -918,7 +918,7 @@ Seasonal forecast</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>245</x>
+      <x>310</x>
       <y>560</y>
       <w>45</w>
       <h>15</h>
@@ -929,7 +929,7 @@ Seasonal forecast</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>710</x>
+      <x>775</x>
       <y>710</y>
       <w>50</w>
       <h>80</h>
@@ -940,7 +940,7 @@ Seasonal forecast</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1070</x>
+      <x>1135</x>
       <y>265</y>
       <w>90</w>
       <h>50</h>
@@ -954,7 +954,7 @@ Users</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>955</x>
+      <x>1020</x>
       <y>325</y>
       <w>105</w>
       <h>50</h>
@@ -968,7 +968,7 @@ Country</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1070</x>
+      <x>1135</x>
       <y>325</y>
       <w>105</w>
       <h>50</h>
@@ -982,7 +982,7 @@ States</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1185</x>
+      <x>1250</x>
       <y>325</y>
       <w>105</w>
       <h>50</h>
@@ -996,7 +996,7 @@ Municipality</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1300</x>
+      <x>1365</x>
       <y>325</y>
       <w>110</w>
       <h>50</h>
@@ -1011,7 +1011,7 @@ Stations</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>955</x>
+      <x>1020</x>
       <y>385</y>
       <w>105</w>
       <h>50</h>
@@ -1025,7 +1025,7 @@ Crop</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1070</x>
+      <x>1135</x>
       <y>385</y>
       <w>105</w>
       <h>50</h>
@@ -1039,7 +1039,7 @@ Cultivars</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1185</x>
+      <x>1250</x>
       <y>385</y>
       <w>105</w>
       <h>50</h>
@@ -1053,7 +1053,7 @@ Soil</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1420</x>
+      <x>1485</x>
       <y>385</y>
       <w>105</w>
       <h>50</h>
@@ -1067,7 +1067,7 @@ Recommendations</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1300</x>
+      <x>1365</x>
       <y>385</y>
       <w>110</w>
       <h>50</h>
@@ -1081,7 +1081,7 @@ Setup</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>955</x>
+      <x>1020</x>
       <y>445</y>
       <w>105</w>
       <h>50</h>
@@ -1096,7 +1096,7 @@ Climate</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1070</x>
+      <x>1135</x>
       <y>445</y>
       <w>105</w>
       <h>50</h>
@@ -1110,7 +1110,7 @@ Climatology</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1185</x>
+      <x>1250</x>
       <y>445</y>
       <w>105</w>
       <h>50</h>
