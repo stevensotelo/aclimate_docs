@@ -13,3 +13,126 @@ The next figure presents the architecture at level 3:
 .. image:: /_static/img/02-l3/level3.*
     :alt: Architecture Level 3 - Components
     :class: device-screen-vertical side-by-side
+
+L3: Database
+------------
+
+L3: ORM
+-------
+
+L3: ForecastApp
+---------------
+
+L3: Master
+----------
+
+L3: Oryza model - API Oryza
+---------------------------
+
+L3: Oryza model - Rice simulation
+---------------------------------
+
+L3: DSSAT API - DSSAT simulation
+--------------------------------
+
+L3: DSSAT API - Risk phenologycal indices
+-----------------------------------------
+
+L3: DSSAT API - Stress indices
+------------------------------
+
+L3: Seasonal forecast - CPT Climate forecast
+--------------------------------------------
+
+L3: Seasonal forecast - PyNextGen Seasonal forecast
+---------------------------------------------------
+
+L3: Seasonal forecast - PyNextGen Subseasonal forecast
+------------------------------------------------------
+
+L3: Subseasonal forecast - PyNextGen Subseasonal forecast
+---------------------------------------------------------
+
+L3: Subseasonal forecast - NextGen Subseasonal forecast
+-------------------------------------------------------
+
+L3: Climate scenarios - Resampling
+----------------------------------
+
+L3: Import Geoserver
+--------------------
+
+L3: Geoserver
+-------------
+
+L3: WebAdmin - Sources
+----------------------
+
+L3: WebAdmin - Users
+--------------------
+
+L3: WebAdmin - Country
+----------------------
+
+L3: WebAdmin - States
+---------------------
+
+L3: WebAdmin - Municipality
+---------------------------
+
+L3: WebAdmin - Weather Stations
+-------------------------------
+
+L3: WebAdmin - Crop
+-------------------
+
+L3: WebAdmin - Cultivars
+------------------------
+
+L3: WebAdmin - Soil
+-------------------
+
+L3: WebAdmin - Setup
+--------------------
+
+L3: WebAdmin - Recommendations
+------------------------------
+
+L3: WebAdmin - Historical Climate
+---------------------------------
+
+L3: WebAdmin - Climatology
+--------------------------
+
+L3: WebAdmin - Historical Yield
+-------------------------------
+
+L3: Web API - Agronomic
+-----------------------
+
+L3: Web API - Forecast
+----------------------
+
+L3: Web API - Geographic
+------------------------
+
+L3: Web API - Historical
+------------------------
+
+L3: Web API - Recommendations
+-----------------------------
+
+L3: Web - Home
+--------------
+
+L3: Web - Climate data
+----------------------
+
+L3: Web - Crop data
+-------------------
+
+L3: Web - Indices
+-----------------
+
+L3: Web - About us
+------------------
