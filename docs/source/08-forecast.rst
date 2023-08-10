@@ -9,7 +9,7 @@ Climate
 =======
 
 
-Through this endpoint you can obtain the information obtained through the forecast process, the probabilities and the climatic scenarios.. This endpoint is used through the Http GET method.
+Through this endpoint you can obtain the information obtained through the forecast process, the probabilities and the climatic scenarios. This endpoint is used through the Http GET method.
 
 To make use of this endpoint you must follow the following steps:
 
@@ -385,6 +385,48 @@ Examples:
 
 
 
+.. _Subseasonal Data - Climate:
+
+.. list-table:: Subseasonal Data - Climate
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **year**
+    - It represents the year to which the probabilities correspond.
+    - Integer
+  * - **month**
+    - It represents the month to which the probabilities correspond.
+    - Integer
+  * - **week**
+    - It represents the week to which the probabilities correspond.
+    - Integer
+  * - **probabilities**
+    - To learn more click here :ref:`probability`.
+    - Array of probabilities
+
+
+.. _Climate Subseasonal:
+
+.. list-table:: Climate Subseasonal
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **weather_station**
+    - This parameter indicates the ID of the weather station to which the forecast data belongs.
+    - ObjectId
+  * - **data**
+    - To learn more click here :ref:`Subseasonal Data - Climate`.
+    - Array of data
+
+
 .. list-table:: Forecast SubseasonalWS
   :widths: 25 25 25
   :header-rows: 1
@@ -399,9 +441,9 @@ Examples:
   * - **confidence**
     - This parameter indicates the confidence value for the intervals confidence.
     - Double
-  * - **yield**
-    - To learn more click here :ref:`Yield`.
-    - Array of yield.
+  * - **climate**
+    - To learn more click here :ref:`Climate Subseasonal`.
+    - Array of climates.
 
 
 JSON format example:
@@ -546,3 +588,107 @@ CSV format example:
 .. image:: /_static/img/08-forecast/yieldprevious_example_2.*
     :alt: yieldprevious_example_2 csv view
     :class: device-screen-vertical side-by-side
+
+
+
+
+
+Climate Previous
+================
+
+
+Through this endpoint you can obtain the information obtained through the forecast process that is desired by means of the Id, the seasonal and subseasonal probabilities and the climatic scenarios. This endpoint is used through the Http GET method.
+
+To make use of this endpoint you must follow the following steps:
+
+* This endpoint is made up of the **base_URL + /api + /Forecast/ClimatePrevious/** (https://webapi.aclimate.org/api/Forecast/ClimatePrevious/)
+* This endpoint needs two parameters: 
+
+    - **forecast:** Represents the id of the forecast from which the information is desired.
+
+    - **weather_stations:** You must enter the id of the weather station from which you want to get the information, if you want to obtain forecast information for different stations, you must separate each Id by ",". 
+
+    - **probabilities:** If this parameter is true it will show the information of the probabilities if it is false it will show the information of the climatic scenarios in the csv format.
+
+    - **format:** to learn more about format parameter click here :ref:`format`.
+
+
+ 
+
+The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/ClimatePrevious/{forecast}/{weather_stations}/{probabilities}/{format}** 
+
+Examples: 
+
+    - https://webapi.aclimate.org/api/Forecast/ClimatePrevious/648202f6a0488e3540a59e4e/60a114538141a31200f3e678/true/json 
+    - https://webapi.aclimate.org/api/Forecast/ClimatePrevious/648202f6a0488e3540a59e4e/60a114538141a31200f3e678/false/csv 
+
+
+
+.. _Climate Previous:
+
+.. list-table:: Climate Previous
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **weather_station**
+    - This parameter indicates the ID of the weather station to which the forecast data belongs.
+    - ObjectId
+  * - **performance**
+    - To learn more click here :ref:`Performance`.
+    - Array of performance
+  * - **data**
+    - To learn more click here :ref:`Data - Climate`.
+    - Array of data
+  * - **subseasonal_data**
+    - To learn more click here :ref:`Subseasonal Data - Climate`.
+    - Array of data
+
+
+
+.. list-table:: Forecast Climate
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **forecast**
+    - Indicates the id of the forecast to which the data belongs.
+    - ObjectId
+  * - **confidence**
+    - This parameter indicates the confidence value for the intervals confidence.
+    - Double
+  * - **climate**
+    - To learn more click here :ref:`Climate Previous`.
+    - Array of climates.
+  * - **scenario**
+    - To learn more click here :ref:`Scenario`.
+    - Array of scenarios.
+
+
+
+JSON format example:
+
+.. image:: /_static/img/08-forecast/climateprevious_example_1.*
+    :alt: climateprevious_example_1 json view
+    :class: device-screen-vertical side-by-side
+
+
+JSON format example 2:
+
+.. image:: /_static/img/08-forecast/climateprevious_example_1-2.*
+    :alt: climateprevious_example_1-2 csv view
+    :class: device-screen-vertical side-by-side
+
+
+CSV format example when probabilities is false:
+
+.. image:: /_static/img/08-forecast/climateprevious_example_2.*
+    :alt: climateprevious_example_2 csv view
+    :class: device-screen-vertical side-by-side
+

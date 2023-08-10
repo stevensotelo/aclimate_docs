@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Aclimate'
+project = 'AClimate'
 copyright = '2023, Steven Sotelo'
 author = 'Steven Sotelo'
 release = '2'
@@ -16,6 +16,7 @@ release = '2'
 
 extensions = [
     'sphinx_rtd_theme',
+    'sphinx.ext.autosectionlabel'
 ]
 
 templates_path = ['_templates']
