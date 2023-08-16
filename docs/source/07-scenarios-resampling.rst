@@ -17,6 +17,6 @@ The structure of the hundred scenarios for each station/location consists of csv
 
 The following diagram describes the process mentioned above:
 
-.. image:: /_static/img/07/07_resampling.*
+.. image:: /_static/img/07-forecast/07_resampling.*
   :alt: Resampling process activity diagram
   :class: device-screen-vertical side-by-side

@@ -17,7 +17,7 @@ Finally having the probability of precipitation for six months, the climatic sce
 
 The following diagram explains the process described above:
 
-.. image:: /_static/img/07/07_forecast.*
+.. image:: /_static/img/07-forecast/07_forecast.*
   :alt: Forecast process activity diagram
   :class: device-screen-vertical side-by-side
 

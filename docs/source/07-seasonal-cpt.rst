@@ -22,6 +22,6 @@ In addition, there is also the metrics.csv file with seven (nine for Ethiopia) c
 
 The following diagram describes the process mentioned above:
 
-.. image:: /_static/img/07/07_CPT.*
+.. image:: /_static/img/07-forecast/07_CPT.*
   :alt: CPT process activity diagram
   :class: device-screen-vertical side-by-side

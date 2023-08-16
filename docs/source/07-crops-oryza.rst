@@ -11,7 +11,7 @@ Finally, the simulation data for each simulated day is extracted and written to 
 
 The following diagram describes the process mentioned above:
 
-.. image:: /_static/img/07/07_oryza.*
+.. image:: /_static/img/07-forecast/07_oryza.*
   :alt: Resampling process activity diagram
   :class: device-screen-vertical side-by-side
 
@@ -95,12 +95,12 @@ For each measure the next colums are calculated:
 
 Below is an example of what the CSV looks like in Excel:
 
-.. image:: /_static/img/07/07_oryza_csv_example.*
+.. image:: /_static/img/07-forecast/07_oryza_csv_example.*
   :alt: Resampling process activity diagram
   :class: device-screen-vertical side-by-side
 
 Below is an example of what the CSV looks like in a plain text viewer:
 
-.. image:: /_static/img/07/07_oryza_csv_example_2.*
+.. image:: /_static/img/07-forecast/07_oryza_csv_example_2.*
   :alt: Resampling process activity diagram
   :class: device-screen-vertical side-by-side
