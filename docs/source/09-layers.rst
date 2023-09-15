@@ -37,7 +37,8 @@ If you want to change the **time** parameter of the layer to display it on diffe
   :alt: GeoServer layer preview OpenLayers
   :class: device-screen-vertical side-by-side
 
-Please note that the date format is YYYY-MM. For the subseasonal layers the same format is followed, but MM represents the week. That is to say from 1-4
+.. warning::
+    Please note that the date format is YYYY-MM. For the subseasonal layers the same format is followed, but MM represents the week. That is to say from 1-4
 
 El Nino y La Nina years
 ==========================
