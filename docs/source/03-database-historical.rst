@@ -122,3 +122,48 @@ This collection contains the historical data of the yield data, This collection 
 .. image:: /_static/img/03-database-historical/hs_historical_yield_model.*
     :alt: Model of the table hs_historical_yield
     :class: device-screen-vertical side-by-side
+
+
+  
+
+hs_historical_daily_data
+========================
+
+This collection contains the historical daily data of each year of each weather station, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+  
+  * - _id
+    - Unique identifier
+    - ObjectId
+  * - weather_station
+    - This parameter indicates the ID of the weather station to which the historical data belongs.
+    - ObjectId
+  * - year
+    - This parameter represents the year to which the historical data belongs.
+    - Integer
+  * - month
+    - This parameter represents the month to which the historical data belongs.
+    - Integer
+  * - daily_readings
+    - This parameter is an array that contains each of the days with their respective data and climatic variables.
+    - Array
+  * - daily_readings.day
+    - This parameter is an integer that represents the number of the days to which the data belongs.
+    - Integer
+  * - daily_readings.data
+    - This parameter is an array that contains each of the measures (t_max, t_max, sol rad and prec) and its value.
+    - Array
+
+
+
+.. image:: /_static/img/03-database-historical/hs_historical_daily_data_model.*
+    :alt: Model of the table hs_historical_daily_data
+    :class: device-screen-vertical side-by-side
+
