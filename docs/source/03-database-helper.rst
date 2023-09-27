@@ -405,6 +405,34 @@ This entity represents the monthly climatological data from a weather station, T
     :class: device-screen-vertical side-by-side
 
 
+daily_readings
+==============
+
+This entity represents the daily climatic data from a weather station, This collection contains the following parameters:
+
+.. list-table:: Data base collection
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Definition
+    - Type
+
+
+  * - day
+    - Day of the month
+    - Integer
+  * - data
+    - Climatic data
+    - Array of ClimaticData
+
+
+
+
+.. image:: /_static/img/03-database-helper/daily_readings_model.*
+    :alt: Model of the collection daily_readings_model
+    :class: device-screen-vertical side-by-side
+
 
 
 climatic_data
