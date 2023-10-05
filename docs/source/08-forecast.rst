@@ -365,7 +365,7 @@ CSV format example:
 .. _Measuares Definition:
 
 .. list-table:: Measuares Definition
-  :widths: 25 25
+  :widths: 25 25 25
   :header-rows: 1
 
   * - Measuare
