@@ -13,8 +13,9 @@ The following Enums are used in the forecast crop model processing
   :widths: 25 25
   :header-rows: 1
 
-  * - Mesuare
+  * - Measuare
     - Long name
+    - Comments
   
   * - yield_14
     - yield kg/ha to 14% humidity
@@ -36,6 +37,7 @@ The following Enums are used in the forecast crop model processing
     - Cumulative Evapotranspiration
   * - land_pre_day
     - Land preparation day
+    - When the value is -1 it indicates that the soil is very wet, which is why the machinery cannot be used on this soil.
   * - st_ger_boo_n
     - Nitrogen stress germination to booting
   * - st_boo_ant_n

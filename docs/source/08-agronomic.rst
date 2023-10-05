@@ -2,7 +2,7 @@ Agronomy
 ########
 
 
-Through this endpoint you can obtain It provides a list of each soil and cultivar that each of the crops has. This endpoint is used through the Http GET method.
+Through this endpoint you can obtain a list of each soil and cultivar that each of the crops has. This endpoint is used through the Http GET method.
 
 To make use of this endpoint you must follow the following steps:
 
@@ -22,6 +22,27 @@ Examples:
     - https://webapi.aclimate.org/api/Agronomic/true/json 
     - https://webapi.aclimate.org/api/Agronomic/false/csv 
 
+
+.. list-table:: Agronomic - Output
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **cp_id**
+    - It is the id of the crop.
+    - ObjectId
+  * - **cp_name**
+    - It is the name of the crop.
+    - String
+  * - **soils**
+    - It is a list of the crop soils, to learn more click here :ref:`Soil`.
+    - Array of Soils
+  * - **cultivars**
+    - It is a list of the crop cultivars, to learn more click here :ref:`Cultivar`.
+    - Array of Cultivars
 
 
 .. _Soil:
@@ -70,29 +91,6 @@ Examples:
   * - **country_id**
     - It is the country id of the country to which the cultivar belongs.
     - ObjectId
-
-
-
-.. list-table:: Agronomic - Output
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Description
-    - Type
-  
-  * - **cp_id**
-    - It is the id of the crop.
-    - ObjectId
-  * - **cp_name**
-    - It is the name of the crop.
-    - String
-  * - **soils**
-    - It is a list of the crop soils, to learn more click here :ref:`Soil`.
-    - Array of Soils
-  * - **cultivars**
-    - It is a list of the crop cultivars, to learn more click here :ref:`Cultivar`.
-    - Array of Cultivars
 
 
 JSON format example:
