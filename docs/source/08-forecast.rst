@@ -33,6 +33,76 @@ Examples:
     - https://webapi.aclimate.org/api/Forecast/Climate/5a7e22af57d7f316c8bc4ac6/false/csv 
 
 
+
+.. list-table:: Forecast Climate
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **forecast**
+    - Indicates the id of the forecast to which the data belongs.
+    - ObjectId
+  * - **confidence**
+    - This parameter indicates the confidence value for the intervals confidence.
+    - Double
+  * - **climate**
+    - To learn more click here :ref:`Climate`.
+    - Array of climates.
+  * - **scenario**
+    - To learn more click here :ref:`Scenario`.
+    - Array of scenarios.
+    
+
+
+.. _Climate:
+
+.. list-table:: Climate
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **weather_station**
+    - This parameter indicates the ID of the weather station to which the forecast data belongs.
+    - ObjectId
+  * - **performance**
+    - To learn more click here :ref:`Performance`.
+    - Array of performance
+  * - **data**
+    - To learn more click here :ref:`Data - Climate`.
+    - Array of data
+
+
+
+.. _Scenario:
+
+.. list-table:: Scenario
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **weather_station**
+    - This parameter indicates the ID of the weather station to which the forecast data belongs.
+    - ObjectId
+  * - **name**
+    - This parameter indicates the ID of the forecast to which the forecast data belongs.
+    - String
+  * - **year**
+    - This parameter indicates the ID of the weather station to which the forecast data belongs.
+    - Integer
+  * - **monthly_data**
+    - To learn more click here :ref:`monthly_data`.
+    - Array of monthly data
+
+
 .. _Data - Climate:
 
 .. list-table:: Data - Climate
@@ -74,25 +144,7 @@ Examples:
     - Double
 
 
-.. _Climate:
 
-.. list-table:: Climate
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Description
-    - Type
-  
-  * - **weather_station**
-    - This parameter indicates the ID of the weather station to which the forecast data belongs.
-    - ObjectId
-  * - **performance**
-    - To learn more click here :ref:`Performance`.
-    - Array of performance
-  * - **data**
-    - To learn more click here :ref:`Data - Climate`.
-    - Array of data
 
 
 .. _monthly_data:
@@ -117,53 +169,6 @@ Examples:
   * - **data.value**
     - Variable value
     - Double
-
-
-.. _Scenario:
-
-.. list-table:: Scenario
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Description
-    - Type
-  
-  * - **weather_station**
-    - This parameter indicates the ID of the weather station to which the forecast data belongs.
-    - ObjectId
-  * - **name**
-    - This parameter indicates the ID of the forecast to which the forecast data belongs.
-    - String
-  * - **year**
-    - This parameter indicates the ID of the weather station to which the forecast data belongs.
-    - Integer
-  * - **monthly_data**
-    - To learn more click here :ref:`monthly_data`.
-    - Array of monthly data
-
-
-
-.. list-table:: Forecast Climate
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Description
-    - Type
-  
-  * - **forecast**
-    - Indicates the id of the forecast to which the data belongs.
-    - ObjectId
-  * - **confidence**
-    - This parameter indicates the confidence value for the intervals confidence.
-    - Double
-  * - **climate**
-    - To learn more click here :ref:`Climate`.
-    - Array of climates.
-  * - **scenario**
-    - To learn more click here :ref:`Scenario`.
-    - Array of scenarios.
 
 
 
@@ -195,6 +200,13 @@ Yield
 
 Through this endpoint you can obtain the information obtained through the crop model process, yield data. This endpoint is used through the Http GET method.
 
+
+.. note::
+
+    The model output information will be obtained for each combination of cultivar and soil that successfully completes the process.
+    The cultivars and soils correspond to those presented in the Agronimic endpoint, but it does not mean that all the cultivars and soils must be present for each point of a certain crop, since for different seasons the points may vary in the result of the different combinations.
+
+
 To make use of this endpoint you must follow the following steps:
 
 * This endpoint is made up of the **base_URL + /api + /Forecast/Yield/** (https://webapi.aclimate.org/api/Forecast/Yield/)
@@ -213,6 +225,45 @@ Examples:
 
     - https://webapi.aclimate.org/api/Forecast/Yield/5a7e22af57d7f316c8bc4ac6/json 
     - https://webapi.aclimate.org/api/Forecast/Yield/5a7e22af57d7f316c8bc4ac6/csv 
+
+
+
+.. list-table:: Forecast Yield
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **forecast**
+    - Indicates the id of the forecast to which the data belongs.
+    - ObjectId
+  * - **confidence**
+    - This parameter indicates the confidence value for the intervals confidence.
+    - Double
+  * - **yield**
+    - To learn more click here :ref:`Yield`.
+    - Array of yield.
+
+
+.. _Yield:
+
+.. list-table:: Yield
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **weather_station**
+    - This parameter indicates the ID of the weather station to which the forecast data belongs.
+    - ObjectId
+  * - **yield**
+    - To learn more click here :ref:`Yield Crop`.
+    - Array of yield crop
+
 
 
 .. _Yield Crop:
@@ -238,45 +289,63 @@ Examples:
     - Corresponds to the simulation end date.
     - Date
   * - **data**
-    - To learn more click here :ref:`yield_data`.
+    - To learn more click here :ref:`yield_data_forecast`.
     - Array of yield data
 
+.. _yield_data_forecast:
 
-.. _Yield:
-
-.. list-table:: Yield
+.. list-table:: yield_data_forecast
   :widths: 25 25 25
   :header-rows: 1
 
   * - Parameter
-    - Description
+    - Definition
     - Type
-  
-  * - **weather_station**
-    - This parameter indicates the ID of the weather station to which the forecast data belongs.
-    - ObjectId
-  * - **yield**
-    - To learn more click here :ref:`Yield Crop`.
-    - Array of yield crop
 
 
-.. list-table:: Forecast Yield
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Description
-    - Type
-  
-  * - **forecast**
-    - Indicates the id of the forecast to which the data belongs.
-    - ObjectId
-  * - **confidence**
-    - This parameter indicates the confidence value for the intervals confidence.
+  * - measure
+    - Name of the measured variable, To learn more click here :ref:`Measuares Definition`
+    - MeasureYield
+  * - avg
+    - average
     - Double
-  * - **yield**
-    - To learn more click here :ref:`Yield`.
-    - Array of yield.
+  * - median
+    - median
+    - Double
+  * - min
+    - minimum value
+    - Double
+  * - max
+    - maximum value
+    - Double
+  * - quar_1
+    - quartile 1
+    - Double
+  * - quar_2
+    - quartile 2
+    - Double
+  * - quar_3
+    - quartile 3
+    - Double
+  * - conf_lower
+    - lower confidence interval limit
+    - Double
+  * - conf_upper
+    - upper confidence interval limit
+    - Double
+  * - sd
+    - standard deviation
+    - Double
+  * - perc_5
+    - 5th percentile
+    - Double
+  * - perc_95
+    - 95th percentile
+    - Double
+  * - coef_var
+    - coefficient of variation
+    - Double
+
 
 
 JSON format example:
@@ -292,6 +361,82 @@ CSV format example:
     :alt: yield_example_2 csv view
     :class: device-screen-vertical side-by-side
 
+
+.. _Measuares Definition:
+
+.. list-table:: Measuares Definition
+  :widths: 25 25
+  :header-rows: 1
+
+  * - Measuare
+    - Long name
+    - Comments
+  
+  * - yield_14
+    - yield kg/ha to 14% humidity
+  * - yield_0
+    - yield kg/ha to 0% humidity
+  * - d_har
+    - days to harvest
+  * - d_dry
+    - days to start grain drying
+  * - prec_acu
+    - Cumulative precipitation for the crop cycle
+  * - t_max_acu
+    - cumulative maximum temperature
+  * - t_min_acu
+    - cumulative minimum temperature
+  * - bio_acu
+    - Total aboveground biomass accumulated
+  * - et_acu
+    - Cumulative Evapotranspiration
+  * - land_pre_day
+    - Land preparation day
+    - When the value is -1 it indicates that the soil is very wet, which is why the machinery cannot be used on this soil.
+  * - st_ger_boo_n
+    - Nitrogen stress germination to booting
+  * - st_boo_ant_n
+    - Nitrogen stress booting to anthesis
+  * - st_beg_end_gf_n
+    - nitrogen stress beginning to end of grain filling
+  * - st_ger_boo_w
+    - Water stress germination to booting
+  * - st_boo_ant_w
+    - Water stress booting to anthesis
+  * - st_beg_end_gf_w
+    - water stress beginning to end of grain filling
+  * - st_ger_ant_n
+    - nitrogen stress germination to anthesis
+  * - st_ger_ant_w
+    - water stress germination to anthesis
+  * - hs_hb_s_e
+    - Hydrological balance between sowing and emergence
+  * - hs_hb_t
+    - Hydrological balance during tillering
+  * - hs_hb_ei_b
+    - Hydrological balance between  beginning of stem elongation period and end of booting
+  * - hs_hb_bh_m
+    - Hydrological balance between beginning of heading and full maturity
+  * - hs_hb_s_m
+    - Hydrological balance between sowing and full maturity
+  * - hs_ra_s
+    - Rainfall amount during pre-sowing period
+  * - hs_ndr10_t
+    - Number of rainy days with rain above 10 mm  during tillering
+  * - hs_ndr40_t
+    - Number of rainy days with rain above 40 mm  during tillering
+  * - hs_ndr5_h_m
+    - Number of days with rain above 5 mm between heading and full maturity
+  * - hs_ndr40_bh_m
+    - Number of days with rain above 40 mm between heading and full maturity
+  * - hs_cdr5_h_f
+    - Maximum number of consecutive days with rain above 5 mm between heading and flowering
+  * - hs_cdr5_f_m
+    - Maximum number of consecutive days with rain above 5 mm between flowering and full maturity
+  * - hs_ndt2_b_f
+    - Number of days with minimum daily temperature below 2 °C between booting and flowering
+  * - hs_ndt28_b_f
+    - Number of hot days with maximum daily temperature above 28 °C between beginning of stem elongation period and flowering
 
 
 
@@ -385,6 +530,43 @@ Examples:
 
 
 
+.. list-table:: Forecast SubseasonalWS
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **forecast**
+    - Indicates the id of the forecast to which the data belongs.
+    - ObjectId
+  * - **confidence**
+    - This parameter indicates the confidence value for the intervals confidence.
+    - Double
+  * - **climate**
+    - To learn more click here :ref:`Climate Subseasonal`.
+    - Array of climates.
+
+
+.. _Climate Subseasonal:
+
+.. list-table:: Climate Subseasonal
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **weather_station**
+    - This parameter indicates the ID of the weather station to which the forecast data belongs.
+    - ObjectId
+  * - **data**
+    - To learn more click here :ref:`Subseasonal Data - Climate`.
+    - Array of data
+
+
 .. _Subseasonal Data - Climate:
 
 .. list-table:: Subseasonal Data - Climate
@@ -407,43 +589,6 @@ Examples:
   * - **probabilities**
     - To learn more click here :ref:`probability`.
     - Array of probabilities
-
-
-.. _Climate Subseasonal:
-
-.. list-table:: Climate Subseasonal
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Description
-    - Type
-  
-  * - **weather_station**
-    - This parameter indicates the ID of the weather station to which the forecast data belongs.
-    - ObjectId
-  * - **data**
-    - To learn more click here :ref:`Subseasonal Data - Climate`.
-    - Array of data
-
-
-.. list-table:: Forecast SubseasonalWS
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Description
-    - Type
-  
-  * - **forecast**
-    - Indicates the id of the forecast to which the data belongs.
-    - ObjectId
-  * - **confidence**
-    - This parameter indicates the confidence value for the intervals confidence.
-    - Double
-  * - **climate**
-    - To learn more click here :ref:`Climate Subseasonal`.
-    - Array of climates.
 
 
 JSON format example:
@@ -624,6 +769,28 @@ Examples:
 
 
 
+.. list-table:: Forecast Climate
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **forecast**
+    - Indicates the id of the forecast to which the data belongs.
+    - ObjectId
+  * - **confidence**
+    - This parameter indicates the confidence value for the intervals confidence.
+    - Double
+  * - **climate**
+    - To learn more click here :ref:`Climate Previous`.
+    - Array of climates.
+  * - **scenario**
+    - To learn more click here :ref:`Scenario`.
+    - Array of scenarios.
+
+
 .. _Climate Previous:
 
 .. list-table:: Climate Previous
@@ -646,30 +813,6 @@ Examples:
   * - **subseasonal_data**
     - To learn more click here :ref:`Subseasonal Data - Climate`.
     - Array of data
-
-
-
-.. list-table:: Forecast Climate
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Description
-    - Type
-  
-  * - **forecast**
-    - Indicates the id of the forecast to which the data belongs.
-    - ObjectId
-  * - **confidence**
-    - This parameter indicates the confidence value for the intervals confidence.
-    - Double
-  * - **climate**
-    - To learn more click here :ref:`Climate Previous`.
-    - Array of climates.
-  * - **scenario**
-    - To learn more click here :ref:`Scenario`.
-    - Array of scenarios.
-
 
 
 JSON format example:
