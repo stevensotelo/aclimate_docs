@@ -10,7 +10,7 @@ Measure Yield
 The following Enums are used in the forecast crop model processing
 
 .. list-table:: Enum Definition
-  :widths: 25 25
+  :widths: 25 25 25
   :header-rows: 1
 
   * - Measuare
