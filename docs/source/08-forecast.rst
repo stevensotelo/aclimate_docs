@@ -304,7 +304,7 @@ Examples:
 
 
   * - measure
-    - Name of the measured variable, To learn more click here :ref:`Measuares Definition`
+    - Name of the measured variable, To learn more click here :ref:`Measuares Definition Forecast`
     - MeasureYield
   * - avg
     - average
@@ -362,9 +362,9 @@ CSV format example:
     :class: device-screen-vertical side-by-side
 
 
-.. _Measuares Definition:
+.. _Measuares Definition Forecast:
 
-.. list-table:: Measuares Definition
+.. list-table:: Measuares Definition Forecast
   :widths: 25 25 25
   :header-rows: 1
 
