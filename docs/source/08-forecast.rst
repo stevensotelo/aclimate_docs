@@ -200,6 +200,13 @@ Yield
 
 Through this endpoint you can obtain the information obtained through the crop model process, yield data. This endpoint is used through the Http GET method.
 
+
+.. note::
+
+    The model output information will be obtained for each combination of cultivar and soil that successfully completes the process.
+    The cultivars and soils correspond to those presented in the Agronimic endpoint, but it does not mean that all the cultivars and soils must be present for each point of a certain crop, since for different seasons the points may vary in the result of the different combinations.
+
+
 To make use of this endpoint you must follow the following steps:
 
 * This endpoint is made up of the **base_URL + /api + /Forecast/Yield/** (https://webapi.aclimate.org/api/Forecast/Yield/)
