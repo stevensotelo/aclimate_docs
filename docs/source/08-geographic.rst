@@ -90,9 +90,9 @@ Examples:
     - https://webapi.aclimate.org/api/Geographic/62a739250dd05810f0e2938d/csv 
 
 
-.. _Weather station ranges:
+.. _State parameters:
 
-.. list-table:: Weather station ranges
+.. list-table:: State parameters
   :widths: 25 25 25
   :header-rows: 1
 
@@ -100,21 +100,39 @@ Examples:
     - Description
     - Type
   
-  * - **crop_id**
-    - Corresponds to the id of the crop to which the range belongs.
+  * - **id**
+    - Corresponds to the Id of state.
     - ObjectId
-  * - **crop_name**
-    - Corresponds to the name of the crop to which the range belongs.
+  * - **name**
+    - Corresponds to the name of state.
     - String
-  * - **label**
-    - Range name.
+  * - **country**
+    - To learn more click here :ref:`Country Parameters`.
+    - Country
+  * - **municipalities**
+    - To learn more click here :ref:`Municipalities parameters`.
+    - Array of municipalities
+
+
+.. _Municipalities parameters:
+
+.. list-table:: Municipalities parameters
+  :widths: 25 25 25
+  :header-rows: 1
+
+  * - Parameter
+    - Description
+    - Type
+  
+  * - **id**
+    - Corresponds to the Id of the municipality.
+    - ObjectId
+  * - **name**
+    - Corresponds to the name of the municipality.
     - String
-  * - **lower**
-    - Minimum limit
-    - Double
-  * - **upper**
-    - Maximum limit.
-    - Double
+  * - **weather_stations**
+    - To learn more click here :ref:`Weather stations parameters`.
+    - Arrays of weather stations
 
 
 .. _Weather stations parameters:
@@ -150,9 +168,9 @@ Examples:
     - Double
 
 
-.. _Municipalities parameters:
+.. _Weather station ranges:
 
-.. list-table:: Municipalities parameters
+.. list-table:: Weather station ranges
   :widths: 25 25 25
   :header-rows: 1
 
@@ -160,39 +178,21 @@ Examples:
     - Description
     - Type
   
-  * - **id**
-    - Corresponds to the Id of the municipality.
+  * - **crop_id**
+    - Corresponds to the id of the crop to which the range belongs.
     - ObjectId
-  * - **name**
-    - Corresponds to the name of the municipality.
+  * - **crop_name**
+    - Corresponds to the name of the crop to which the range belongs.
     - String
-  * - **weather_stations**
-    - To learn more click here :ref:`Weather stations parameters`.
-    - Arrays of weather stations
-
-
-.. _State parameters:
-
-.. list-table:: State parameters
-  :widths: 25 25 25
-  :header-rows: 1
-
-  * - Parameter
-    - Description
-    - Type
-  
-  * - **id**
-    - Corresponds to the Id of state.
-    - ObjectId
-  * - **name**
-    - Corresponds to the name of state.
+  * - **label**
+    - Range name.
     - String
-  * - **country**
-    - To learn more click here :ref:`Country Parameters`.
-    - Country
-  * - **municipalities**
-    - To learn more click here :ref:`Municipalities parameters`.
-    - Array of municipalities
+  * - **lower**
+    - Minimum limit
+    - Double
+  * - **upper**
+    - Maximum limit.
+    - Double
 
 
 JSON format example:
@@ -215,7 +215,9 @@ Crop
 ====
 
 
-Through this endpoint you can obtain a list of the states of the selected country with each of their municipalities and weather stations and for each weather station their ranges for each crop grouped by each crop. This endpoint is used through the Http GET method.
+Through this end point you can obtain a list of the states of the selected country with each of their municipalities and meteorological stations and for each meteorological station their productive ranges for each crop.
+
+The states are grouped by crops, this endpoint lists all the states for the crops that the selected country has. This endpoint is used through the Http GET method.
 
 To make use of this endpoint you must follow the following steps:
 
