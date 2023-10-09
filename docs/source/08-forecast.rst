@@ -1,15 +1,17 @@
 .. _Forecast information endpoints:
 
-
 Forecast
 ########
 
+This interface grants you access to forecasts information in AClimate. Tailored for developers, researchers, and stakeholders, 
+it provides detailed climate predictions (seasonal and subseaonal) for informed decision-making. Retrieve essential weather parameters such as temperature, 
+precipitation and solar radiation, and more. It also provides agroclimatic information for different crops.
 
 Climate
 =======
 
-
-Through this endpoint you can obtain the information obtained through the forecast process, the probabilities and the climatic scenarios. This endpoint is used through the Http GET method.
+Through this endpoint you can obtain the information obtained through the forecast process, the probabilities and the climatic scenarios. 
+This endpoint is used through the Http GET method.
 
 To make use of this endpoint you must follow the following steps:
 
@@ -22,17 +24,12 @@ To make use of this endpoint you must follow the following steps:
 
     - **format:** to learn more about format parameter click here :ref:`format`.
 
-
- 
-
 The endpoint must follow the following format **https://webapi.aclimate.org/api/Forecast/Climate/{weather_stations}/{probabilities}/{format}** 
 
 Examples: 
 
     - https://webapi.aclimate.org/api/Forecast/Climate/5a7e22af57d7f316c8bc4ac6/true/json 
     - https://webapi.aclimate.org/api/Forecast/Climate/5a7e22af57d7f316c8bc4ac6/false/csv 
-
-
 
 .. list-table:: Forecast Climate
   :widths: 25 25 25
@@ -41,7 +38,7 @@ Examples:
   * - Parameter
     - Description
     - Type
-  
+
   * - **forecast**
     - Indicates the id of the forecast to which the data belongs.
     - ObjectId
@@ -54,8 +51,6 @@ Examples:
   * - **scenario**
     - To learn more click here :ref:`Scenario`.
     - Array of scenarios.
-    
-
 
 .. _Climate:
 
@@ -76,8 +71,6 @@ Examples:
   * - **data**
     - To learn more click here :ref:`Data - Climate`.
     - Array of data
-
-
 
 .. _Scenario:
 
@@ -102,7 +95,6 @@ Examples:
     - To learn more click here :ref:`monthly_data`.
     - Array of monthly data
 
-
 .. _Data - Climate:
 
 .. list-table:: Data - Climate
@@ -123,7 +115,6 @@ Examples:
     - To learn more click here :ref:`probability`.
     - Array of probabilities
 
-
 .. _Performance:
 
 .. list-table:: Performance
@@ -142,10 +133,6 @@ Examples:
   * - **value**
     - It represents the value of the performance.
     - Double
-
-
-
-
 
 .. _monthly_data:
 
@@ -191,7 +178,6 @@ CSV format example when probabilities is false:
 .. image:: /_static/img/08-forecast/climate_example_3.*
     :alt: climate_example_3 csv view
     :class: device-screen-vertical side-by-side
-
 
 
 Yield
@@ -263,8 +249,6 @@ Examples:
   * - **yield**
     - To learn more click here :ref:`Yield Crop`.
     - Array of yield crop
-
-
 
 .. _Yield Crop:
 
@@ -345,8 +329,6 @@ Examples:
   * - coef_var
     - coefficient of variation
     - Double
-
-
 
 JSON format example:
 
