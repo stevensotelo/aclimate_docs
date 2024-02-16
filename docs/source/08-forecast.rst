@@ -304,7 +304,7 @@ Examples:
 
 
   * - measure
-    - Name of the measured variable, To learn more click here :ref:`Measuares Definition Forecast`
+    - Name of the measured variable, To learn more click here :ref:`Measures Definition Forecast`
     - MeasureYield
   * - avg
     - average
@@ -362,37 +362,37 @@ CSV format example:
     :class: device-screen-vertical side-by-side
 
 
-.. _Measuares Definition Forecast:
+.. _Measures Definition Forecast:
 
-.. list-table:: Measuares Definition Forecast
+.. list-table:: Measures Definition Forecast
   :widths: 25 25 25
   :header-rows: 1
 
-  * - Measuare
-    - Long name
-    - Comments
+  * - Measure
+    - Description
+    - Units
   
   * - yield_14
     - yield kg/ha to 14% humidity
-    -
+    - kg/ha
   * - yield_0
     - yield kg/ha to 0% humidity
-    -
+    - kg/ha
   * - d_har
     - days to harvest
-    -
+    - days
   * - d_dry
     - days to start grain drying
-    -
+    - days
   * - prec_acu
     - Cumulative precipitation for the crop cycle
-    -
+    - mm
   * - t_max_acu
     - cumulative maximum temperature
-    -
+    - °C
   * - t_min_acu
     - cumulative minimum temperature
-    -
+    - °C
   * - bio_acu
     - Total aboveground biomass accumulated
     -
@@ -400,8 +400,8 @@ CSV format example:
     - Cumulative Evapotranspiration
     -
   * - land_pre_day
-    - Land preparation day
-    - When the value is -1 it indicates that the soil is very wet, which is why the machinery cannot be used on this soil.
+    - Land preparation day - When the value is -1 it indicates that the soil is very wet, which is why the machinery cannot be used on this soil.
+    - 
   * - st_ger_boo_n
     - Nitrogen stress germination to booting
     -

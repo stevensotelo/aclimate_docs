@@ -9,37 +9,37 @@ Measure Yield
 
 The following Enums are used in the forecast crop model processing
 
-.. _Measuares Definition:
+.. _Measures Definition:
 
-.. list-table:: Measuares Definition
+.. list-table:: Measures Definition
   :widths: 25 25 25
   :header-rows: 1
 
-  * - Measuare
-    - Long name
-    - Comments
+  * - Measure
+    - Description
+    - Units
   
   * - yield_14
     - yield kg/ha to 14% humidity
-    -
+    - kg/ha
   * - yield_0
     - yield kg/ha to 0% humidity
-    -
+    - kg/ha
   * - d_har
     - days to harvest
-    -
+    - days
   * - d_dry
     - days to start grain drying
-    -
+    - days
   * - prec_acu
     - Cumulative precipitation for the crop cycle
-    -
+    - mm
   * - t_max_acu
     - cumulative maximum temperature
-    -
+    - °C
   * - t_min_acu
     - cumulative minimum temperature
-    -
+    - °C
   * - bio_acu
     - Total aboveground biomass accumulated
     -
@@ -47,8 +47,8 @@ The following Enums are used in the forecast crop model processing
     - Cumulative Evapotranspiration
     -
   * - land_pre_day
-    - Land preparation day
-    - When the value is -1 it indicates that the soil is very wet, which is why the machinery cannot be used on this soil.
+    - Land preparation day - When the value is -1 it indicates that the soil is very wet, which is why the machinery cannot be used on this soil.
+    - 
   * - st_ger_boo_n
     - Nitrogen stress germination to booting
     -

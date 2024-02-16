@@ -27,7 +27,7 @@ This collection contains the historical climatic data by month of each of the we
     - This parameter is an integer that represents the number of the month to which the data belongs.
     - Integer
   * - monthly_data.data
-    - This parameter is an array that contains each of the mesaures (t_max, t_min, sol_rad and prec).
+    - This parameter is an array that contains each of the measure (t_max, t_min, sol_rad and prec).
     - Array
 
 
@@ -66,7 +66,7 @@ This collection contains the historical data of each year of each weather statio
     - This parameter is an integer that represents the number of the month to which the data belongs.
     - Integer
   * - monthly_data.data
-    - This parameter is an array that contains each of the mesaures (t_max, t_min, sol_rad and prec).
+    - This parameter is an array that contains each of the measure (t_max, t_min, sol_rad and prec).
     - Array
 
 
